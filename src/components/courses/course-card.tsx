@@ -39,7 +39,7 @@ export function CourseCard({ course }: CourseCardProps) {
   return (
     <Link href={`/kurs/${course.slug}`} className="group block">
       <article className="h-full rounded-2xl border border-gray-200 bg-white overflow-hidden transition-all hover:shadow-md hover:border-gray-300">
-        <div className="aspect-video bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+        <div className="aspect-video bg-gradient-to-br from-violet-50 to-indigo-100 flex items-center justify-center">
           {course.thumbnail ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
@@ -48,7 +48,7 @@ export function CourseCard({ course }: CourseCardProps) {
               className="w-full h-full object-cover"
             />
           ) : (
-            <BookOpenIcon className="size-12 text-indigo-300" />
+            <BookOpenIcon className="size-12 text-violet-300" />
           )}
         </div>
         <div className="p-6">
@@ -58,7 +58,7 @@ export function CourseCard({ course }: CourseCardProps) {
             </Badge>
             {course.isFree && <Badge variant="success">Gratis</Badge>}
           </div>
-          <h2 className="text-base font-semibold text-gray-950 group-hover:text-blue-700 transition-colors line-clamp-2">
+          <h2 className="text-base font-semibold text-gray-950 group-hover:text-violet-700 transition-colors line-clamp-2">
             {course.title}
           </h2>
           <p className="mt-2 text-sm text-gray-500 line-clamp-2">{course.description}</p>

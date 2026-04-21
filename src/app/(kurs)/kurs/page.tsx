@@ -6,9 +6,9 @@ import { buildMetadata } from "../../../lib/seo"
 import { Breadcrumbs } from "../../../components/shared/breadcrumbs"
 
 export const metadata = buildMetadata({
-  title: "AI-kurs pa norsk",
+  title: "AI-kurs på norsk",
   description:
-    "Utforsk alle AI-kursene pa AIvett. Fra nybegynner til avansert — strukturerte kurs med leksjoner, quizer og praktiske oppgaver.",
+    "Utforsk alle AI-kursene på AIvett. Fra nybegynner til avansert — strukturerte kurs med leksjoner, quizer og praktiske oppgaver.",
   slug: "/kurs",
 })
 
@@ -30,7 +30,7 @@ export default async function CoursesPage() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Breadcrumbs items={[{ label: "Kurs" }]} />
         <div className="mt-6">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-950">AI-kurs pa norsk</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-gray-950">AI-kurs på norsk</h1>
           <p className="mt-3 text-lg text-gray-500">
             {courses.length} kurs tilgjengelig — gratis og premium
           </p>

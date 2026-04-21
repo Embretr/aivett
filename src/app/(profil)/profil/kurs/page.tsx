@@ -72,7 +72,7 @@ export default async function MyCoursesPage() {
 
         {accesses.length === 0 ? (
           <div className="mt-20 text-center">
-            <p className="text-gray-500 mb-4">Du har ikke kjopt noen kurs enn.</p>
+            <p className="text-gray-500 mb-4">Du har ikke kjøpt noen kurs ennå.</p>
             <Link href="/kurs">
               <span className="text-sm font-medium text-blue-600 hover:underline">
                 Se alle kurs &rarr;
@@ -94,7 +94,7 @@ export default async function MyCoursesPage() {
                   <CourseCard course={course} />
                   <div className="px-1">
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-1">
-                      <span>{completed}/{lessonIds.length} leksjoner fullfort</span>
+                      <span>{completed}/{lessonIds.length} leksjoner fullført</span>
                       <span>{percentage}%</span>
                     </div>
                     <Progress value={percentage} />

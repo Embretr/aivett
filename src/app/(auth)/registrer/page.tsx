@@ -48,7 +48,7 @@ export default function RegisterPage() {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
       <h1 className="text-2xl font-bold text-gray-950">Opprett konto</h1>
-      <p className="mt-2 text-sm text-gray-500">Gratis — ingen kredittkort nodvendig</p>
+      <p className="mt-2 text-sm text-gray-500">Gratis — ingen kredittkort nødvendig</p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="mt-6 space-y-4">
         <div className="space-y-1.5">
@@ -90,7 +90,7 @@ export default function RegisterPage() {
       </form>
 
       <p className="mt-4 text-center text-xs text-gray-400">
-        Ved a registrere deg godtar du vare{" "}
+        Ved å registrere deg godtar du våre{" "}
         <Link href="/vilkar" className="underline hover:text-gray-600">
           brukervilkar
         </Link>

@@ -21,7 +21,7 @@ import { CourseCheckoutButton } from "../../../../components/courses/course-chec
 
 const levelLabels: Record<string, string> = {
   BEGINNER: "Nybegynner",
-  INTERMEDIATE: "Videregaende",
+  INTERMEDIATE: "Videregående",
   ADVANCED: "Avansert",
 }
 
@@ -197,7 +197,7 @@ export default async function CourseDetailPage({ params }: { params: Promise<{ s
                         {course.isFree ? "Gratis" : formatNOK(course.price)}
                       </span>
                       {!course.isFree && (
-                        <span className="text-sm text-gray-500">· 1 ars tilgang</span>
+                        <span className="text-sm text-gray-500">· 1 års tilgang</span>
                       )}
                     </div>
 
@@ -216,7 +216,7 @@ export default async function CourseDetailPage({ params }: { params: Promise<{ s
                     <div className="mt-6 space-y-2">
                       <Link href="/priser">
                         <Button variant="secondary" className="w-full">
-                          Se alle kurs — fra 249 kr/maned
+                          Se alle kurs — fra 249 kr/måned
                         </Button>
                       </Link>
                     </div>
@@ -234,11 +234,11 @@ export default async function CourseDetailPage({ params }: { params: Promise<{ s
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircleIcon className="size-4 text-green-500 shrink-0" />
-                    Fremgangsporingen
+                    Fremgangssporingen
                   </li>
                   {!course.isFree && (
                     <li className="flex items-center gap-2">
-                      <CheckCircleIcon className="size-4 text-green-500 shrink-0" />1 ars tilgang
+                      <CheckCircleIcon className="size-4 text-green-500 shrink-0" />1 års tilgang
                     </li>
                   )}
                 </ul>

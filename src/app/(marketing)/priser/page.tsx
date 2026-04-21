@@ -26,9 +26,9 @@ const plans = [
     ],
   },
   {
-    name: "Manedlig",
+    name: "Månedlig",
     price: "249",
-    period: "/maned",
+    period: "/måned",
     description: "Full tilgang til alle kurs",
     cta: "Start abonnement",
     plan: "monthly" as const,
@@ -37,22 +37,22 @@ const plans = [
       "Alle premium-kurs",
       "Ubegrenset tilgang",
       "Quizer og oppgaver",
-      "Fremgangsporingen",
+      "Fremgangssporingen",
       "Ingen annonser",
-      "Avbryt nar som helst",
+      "Avbryt når som helst",
     ],
   },
   {
-    name: "Arlig",
+    name: "Årlig",
     price: "1 999",
-    period: "/ar",
+    period: "/år",
     description: "Beste verdi — spar 1 000 kr",
-    cta: "Start arsabonnement",
+    cta: "Start årsabonnement",
     plan: "yearly" as const,
     featured: false,
     features: [
-      "Alt i Manedlig",
-      "2 maneder gratis",
+      "Alt i Månedlig",
+      "2 måneder gratis",
       "Prioritert support",
       "Tidlig tilgang til nytt innhold",
     ],
@@ -61,21 +61,21 @@ const plans = [
 
 const faqs = [
   {
-    question: "Kan jeg avbryte nar som helst?",
-    answer: "Ja, du kan avbryte abonnementet nar du vil. Du beholder tilgangen ut betalingsperioden.",
+    question: "Kan jeg avbryte når som helst?",
+    answer: "Ja, du kan avbryte abonnementet når du vil. Du beholder tilgangen ut betalingsperioden.",
   },
   {
-    question: "Hva er forskjellen pa enkelt kurs og abonnement?",
+    question: "Hva er forskjellen på enkelt kurs og abonnement?",
     answer:
-      "Enkelt kurs gir 1 ars tilgang til ett spesifikt kurs (499–999 kr). Abonnement gir tilgang til alle kurs sla lenge det er aktivt.",
+      "Enkelt kurs gir 1 års tilgang til ett spesifikt kurs (499–999 kr). Abonnement gir tilgang til alle kurs så lenge det er aktivt.",
   },
   {
     question: "Aksepterer dere Vipps?",
-    answer: "Vi aksepterer alle vanlige kredittkort via Stripe. Vipps-stotte er planlagt.",
+    answer: "Vi aksepterer alle vanlige kredittkort via Stripe. Vipps-støtte er planlagt.",
   },
   {
-    question: "Hva hvis jeg er misfornoy?",
-    answer: "Kontakt oss innen 14 dager for full refusjon — ingen sporsmal stilt.",
+    question: "Hva hvis jeg er misfornøyd?",
+    answer: "Kontakt oss innen 14 dager for full refusjon — ingen spørsmål stilt.",
   },
 ]
 
@@ -111,7 +111,7 @@ export default function PricingPage() {
               Enkle priser, ingen overraskelser
             </h1>
             <p className="mt-4 text-lg text-gray-500">
-              Start gratis. Oppgrader nar du er klar.
+              Start gratis. Oppgrader når du er klar.
             </p>
           </div>
 
@@ -186,7 +186,7 @@ export default function PricingPage() {
           </div>
 
           <p className="mt-8 text-center text-sm text-gray-500">
-            Enkelt kurs: 499–999 kr med 1 ars tilgang.{" "}
+            Enkelt kurs: 499–999 kr med 1 års tilgang.{" "}
             <Link href="/kurs" className="text-blue-600 hover:underline">
               Se alle kurs
             </Link>
@@ -195,7 +195,7 @@ export default function PricingPage() {
           {/* FAQ */}
           <div className="mt-24">
             <h2 className="text-center text-2xl font-bold tracking-tight text-gray-950 mb-10">
-              Ofte stilte sporsmal om priser
+              Ofte stilte spørsmål om priser
             </h2>
             <div className="mx-auto max-w-3xl space-y-6">
               {faqs.map((faq) => (

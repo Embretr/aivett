@@ -16,7 +16,7 @@ export function LessonCompleteButton({ lessonId, isCompleted, nextLessonHref }: 
   const mark = trpc.courses.markLessonComplete.useMutation({
     onSuccess: () => {
       void utils.courses.progress.invalidate()
-      toast.success("Leksjon fullfort!")
+      toast.success("Leksjon fullført!")
     },
   })
 
@@ -43,7 +43,7 @@ export function LessonCompleteButton({ lessonId, isCompleted, nextLessonHref }: 
         disabled={mark.isPending}
         size="sm"
       >
-        {mark.isPending ? "Lagrer..." : "Merk som fullfort"}
+        {mark.isPending ? "Lagrer..." : "Merk som fullført"}
       </Button>
       {nextLessonHref && (
         <a href={nextLessonHref}>

@@ -2,20 +2,10 @@ export const dynamic = "force-dynamic"
 
 import Link from "next/link"
 import { Button } from "../../components/ui/button"
-import { Gradient } from "../../components/marketing/gradient"
 import { db } from "../../server/db"
 import { CourseCard } from "../../components/courses/course-card"
-import { ArticleCard } from "../../components/shared/article-card"
 import { buildMetadata, faqJsonLd } from "../../lib/seo"
-import {
-  AcademicCapIcon,
-  NewspaperIcon,
-  BookOpenIcon,
-  ChartBarIcon,
-  ShieldCheckIcon,
-  BoltIcon,
-} from "@heroicons/react/24/outline"
-import { CheckIcon } from "@heroicons/react/20/solid"
+import { ArrowRightIcon } from "@heroicons/react/20/solid"
 
 export const metadata = buildMetadata({
   title: "Lær kunstig intelligens på norsk",
@@ -23,42 +13,9 @@ export const metadata = buildMetadata({
     "Norges ledende plattform for AI-læring. Kurs, guider, nyheter og sammenligninger om kunstig intelligens på norsk.",
 })
 
-const features = [
-  {
-    icon: AcademicCapIcon,
-    title: "Kurs på norsk",
-    description: "Strukturerte kurs med leksjoner, quizer og oppgaver — alt på norsk.",
-  },
-  {
-    icon: NewspaperIcon,
-    title: "AI-nyheter",
-    description: "Hold deg oppdatert med de siste nyhetene fra AI-verdenen, forklart på norsk.",
-  },
-  {
-    icon: BookOpenIcon,
-    title: "Guider og veiledninger",
-    description: "Dyptgående guider som hjelper deg å ta i bruk AI-verktoy i praksis.",
-  },
-  {
-    icon: ChartBarIcon,
-    title: "Sammenligninger",
-    description: "Uavhengige sammenligninger av AI-verktoy slik at du velger riktig.",
-  },
-  {
-    icon: BoltIcon,
-    title: "Praktisk innhold",
-    description: "Fokus pa praktiske ferdigheter du kan bruke med en gang.",
-  },
-  {
-    icon: ShieldCheckIcon,
-    title: "Alltid oppdatert",
-    description: "AI utvikler seg raskt. Vi holder innholdet oppdatert for deg.",
-  },
-]
-
 const testimonials = [
   {
-    text: "AIvett har gjort det sa enkelt a komme i gang med AI. Kurset om ChatGPT forandret maten jeg jobber pa.",
+    text: "AIvett har gjort det så enkelt å komme i gang med AI. Kurset om ChatGPT forandret måten jeg jobber på.",
     author: "Maria H.",
     role: "Markedssjef",
   },
@@ -68,7 +25,7 @@ const testimonials = [
     role: "Designer",
   },
   {
-    text: "Jeg bruker AIvett til a holde meg oppdatert pa nyheter og prover kursene pa fritiden.",
+    text: "Jeg bruker AIvett til å holde meg oppdatert på nyheter og prøver kursene på fritiden.",
     author: "Kristin M.",
     role: "Lærer",
   },
@@ -76,22 +33,22 @@ const testimonials = [
 
 const faqs = [
   {
-    question: "Er kursene pa norsk?",
-    answer: "Ja, alt innhold pa AIvett er pa norsk — kurs, guider, nyheter og sammenligninger.",
+    question: "Er kursene på norsk?",
+    answer: "Ja, alt innhold på AIvett er på norsk — kurs, guider, nyheter og sammenligninger.",
   },
   {
-    question: "Hva er forskjellen pa gratis og betalt innhold?",
+    question: "Hva er forskjellen på gratis og betalt innhold?",
     answer:
-      "Nyheter, guider og noen gratiskurs er alltid gratis. Premium-kurs krever kjop (1 ars tilgang) eller et abonnement.",
+      "Nyheter, guider og noen gratiskurs er alltid gratis. Premium-kurs krever kjøp (1 års tilgang) eller et abonnement.",
   },
   {
     question: "Kan jeg ta kursene i mitt eget tempo?",
-    answer: "Ja! Alle kurs er selvdrevne — du bestemmer nar og i hvilken rekkefylge du gjennomforer dem.",
+    answer: "Ja! Alle kurs er selvdrevne — du bestemmer når og i hvilken rekkefølge du gjennomfører dem.",
   },
   {
-    question: "Hva skjer nar 1 aret er over?",
+    question: "Hva skjer når 1 året er over?",
     answer:
-      "Etter 1 ar mister du tilgangen til betalte kurs, men kan forlenge tilgangen ved a kjope pa nytt eller tegne abonnement.",
+      "Etter 1 år mister du tilgangen til betalte kurs, men kan forlenge ved å kjøpe på nytt eller tegne abonnement.",
   },
 ]
 
@@ -109,7 +66,7 @@ async function getFeaturedCourses() {
 async function getLatestArticles() {
   return db.article.findMany({
     where: { published: true },
-    take: 3,
+    take: 4,
     orderBy: { publishedAt: "desc" },
     select: {
       id: true,
@@ -125,6 +82,20 @@ async function getLatestArticles() {
   })
 }
 
+const categoryPaths: Record<string, string> = {
+  NEWS: "nyheter",
+  GUIDE: "guider",
+  TUTORIAL: "veiledninger",
+  COMPARISON: "sammenligninger",
+}
+
+const categoryLabels: Record<string, string> = {
+  NEWS: "Nyhet",
+  GUIDE: "Guide",
+  TUTORIAL: "Veiledning",
+  COMPARISON: "Sammenligning",
+}
+
 export default async function LandingPage() {
   const [courses, articles] = await Promise.all([getFeaturedCourses(), getLatestArticles()])
 
@@ -135,63 +106,81 @@ export default async function LandingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <Gradient className="absolute inset-x-0 top-0 h-[600px] opacity-30" />
-        <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-24 lg:px-8 lg:pt-24 lg:pb-32">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-6 inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700">
+      {/* Hero — dark editorial */}
+      <section className="relative overflow-hidden bg-[#080808]">
+        {/* Dot grid texture */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "radial-gradient(rgba(255,255,255,0.055) 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+        {/* Violet glow */}
+        <div className="absolute top-0 right-0 w-[700px] h-[500px] bg-violet-700/20 rounded-full blur-3xl translate-x-1/3 -translate-y-1/4" />
+
+        <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-28 lg:px-8 lg:pt-28 lg:pb-36">
+          <div className="max-w-3xl">
+            <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white/50">
+              <span className="size-1.5 rounded-full bg-violet-400 shrink-0" />
               Norges første AI-læringsplattform
             </div>
-            <h1 className="text-5xl font-bold tracking-tight text-gray-950 sm:text-6xl lg:text-7xl">
-              Forsta og bruk{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                kunstig intelligens
-              </span>
+
+            <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-[4.5rem] lg:leading-[1.08]">
+              Forstå og bruk<br />
+              <span className="text-violet-400">kunstig intelligens</span><br />
+              på norsk.
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-              Kurs, guider, nyheter og sammenligninger om AI — pa norsk. For deg som vil holde deg
-              oppdatert og lare praktiske AI-ferdigheter.
+
+            <p className="mt-8 text-lg leading-8 text-white/50 max-w-xl">
+              Kurs, guider og nyheter om AI — forklart enkelt, på norsk. For deg som vil henge med i utviklingen.
             </p>
-            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+
+            <div className="mt-10 flex flex-wrap gap-3">
               <Link href="/kurs">
-                <Button size="lg">Se alle kurs</Button>
+                <Button size="lg" className="bg-violet-700 hover:bg-violet-600 text-white shadow-none">
+                  Se alle kurs
+                </Button>
               </Link>
-              <Link href="/priser">
-                <Button variant="secondary" size="lg">
-                  Se priser
+              <Link href="/registrer">
+                <Button
+                  size="lg"
+                  variant="ghost"
+                  className="text-white/60 hover:text-white hover:bg-white/10 border border-white/10"
+                >
+                  Opprett gratis konto
                 </Button>
               </Link>
             </div>
-            <p className="mt-4 text-sm text-gray-500">
-              Gratis kurs tilgjengelig — ingen kredittkort nodvendig
-            </p>
+
+            <p className="mt-5 text-sm text-white/25">Ingen kredittkort nødvendig</p>
           </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section className="py-20 bg-gray-50">
+      {/* Category strip */}
+      <div className="border-b border-gray-100 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-950">
-              Alt du trenger for å lære AI
-            </h2>
-            <p className="mt-3 text-lg text-gray-500">
-              Fra nybegynner til ekspert — pa dine premisser
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
-              <div key={feature.title} className="rounded-2xl bg-white border border-gray-200 p-6">
-                <feature.icon className="size-8 text-blue-600 mb-4" />
-                <h3 className="font-semibold text-gray-950 mb-2">{feature.title}</h3>
-                <p className="text-sm text-gray-500">{feature.description}</p>
-              </div>
+          <div className="flex flex-wrap items-center gap-1 py-3">
+            <span className="text-xs font-medium text-gray-300 mr-2 shrink-0">Utforsk:</span>
+            {[
+              { href: "/kurs", label: "Kurs" },
+              { href: "/nyheter", label: "AI-nyheter" },
+              { href: "/guider", label: "Guider" },
+              { href: "/veiledninger", label: "Veiledninger" },
+              { href: "/sammenligninger", label: "Sammenligninger" },
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="rounded-full px-3.5 py-1 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-950 transition-colors"
+              >
+                {label}
+              </Link>
             ))}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Featured courses */}
       {courses.length > 0 && (
@@ -199,14 +188,17 @@ export default async function LandingPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="flex items-end justify-between mb-10">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-950">Populære kurs</h2>
-                <p className="mt-2 text-gray-500">Kom i gang med det beste innholdet vart</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-violet-600">Kurs</p>
+                <h2 className="mt-1.5 text-3xl font-bold tracking-tight text-gray-950">Populære kurs</h2>
               </div>
-              <Link href="/kurs" className="text-sm font-medium text-blue-600 hover:text-blue-700">
-                Se alle kurs &rarr;
+              <Link
+                href="/kurs"
+                className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-violet-700 transition-colors"
+              >
+                Se alle <ArrowRightIcon className="size-3.5" />
               </Link>
             </div>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {courses.map((course) => (
                 <CourseCard key={course.id} course={course} />
               ))}
@@ -215,89 +207,145 @@ export default async function LandingPage() {
         </section>
       )}
 
-      {/* Pricing preview */}
+      {/* Pricing — dark editorial */}
       <section className="py-20 bg-gray-950">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-white">
-                Start gratis, oppgrader nar du er klar
+              <p className="text-xs font-semibold uppercase tracking-widest text-violet-400">Priser</p>
+              <h2 className="mt-3 text-4xl font-bold tracking-tight text-white">
+                Start gratis, oppgrader når du er klar
               </h2>
-              <p className="mt-4 text-lg text-gray-400">
-                Gratis kurs og artikler alltid tilgjengelig. Fa tilgang til alle kurs for 249 kr/maned.
+              <p className="mt-6 text-lg text-gray-400 leading-relaxed">
+                Gratis kurs og artikler er alltid tilgjengelig. Få ubegrenset tilgang til alle kurs for 249 kr/måned.
               </p>
               <ul className="mt-8 space-y-3">
                 {[
                   "Ubegrenset tilgang til alle kurs",
                   "Quizer og praktiske oppgaver",
-                  "Fremgangsporingen",
+                  "Fremgangssporing per leksjon",
                   "Ingen annonser",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-gray-300">
-                    <CheckIcon className="size-5 text-blue-400 shrink-0" />
+                  <li key={item} className="flex items-center gap-3 text-gray-300 text-sm">
+                    <span className="size-1.5 rounded-full bg-violet-400 shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
-              <div className="mt-10 flex gap-4">
+              <div className="mt-10 flex flex-wrap gap-3">
                 <Link href="/priser">
                   <Button size="lg" variant="secondary">
                     Se alle planer
                   </Button>
                 </Link>
                 <Link href="/registrer">
-                  <Button
-                    size="lg"
-                    className="bg-blue-600 hover:bg-blue-700 text-white"
-                  >
+                  <Button size="lg" className="bg-violet-700 hover:bg-violet-600 text-white shadow-none">
                     Start gratis
                   </Button>
                 </Link>
               </div>
             </div>
-            <div className="rounded-2xl bg-white/5 border border-white/10 p-8">
-              <div className="flex items-baseline gap-1">
-                <span className="text-5xl font-bold text-white">249</span>
-                <span className="text-xl text-gray-400">kr/maned</span>
+
+            <div className="space-y-3">
+              <div className="rounded-xl border border-white/8 bg-white/4 p-5">
+                <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Gratis</p>
+                <p className="mt-1 text-2xl font-bold text-white">0 kr</p>
+                <p className="mt-1 text-sm text-gray-500">Nyheter, guider og gratis kurs</p>
               </div>
-              <p className="mt-2 text-sm text-gray-400">eller 1 999 kr/ar — spar 1 000 kr</p>
-              <div className="mt-6 space-y-3">
-                <div className="rounded-xl bg-white/5 p-4">
-                  <p className="text-sm font-medium text-white">Enkelt kurs</p>
-                  <p className="text-xs text-gray-400 mt-1">499–999 kr · 1 ars tilgang</p>
+              <div className="rounded-xl border border-violet-500/30 bg-violet-600/10 p-5 ring-1 ring-violet-500/20">
+                <div className="flex items-center justify-between">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-violet-400">Månedlig</p>
+                  <span className="rounded-full bg-violet-600 px-2.5 py-0.5 text-xs font-semibold text-white">
+                    Populær
+                  </span>
                 </div>
-                <div className="rounded-xl bg-blue-600/20 border border-blue-500/30 p-4">
-                  <div className="flex items-center justify-between">
-                    <p className="text-sm font-medium text-white">Manedlig abonnement</p>
-                    <span className="rounded-full bg-blue-600 px-2 py-0.5 text-xs font-medium text-white">
-                      Populær
-                    </span>
-                  </div>
-                  <p className="text-xs text-gray-400 mt-1">249 kr/maned · Alle kurs</p>
-                </div>
-                <div className="rounded-xl bg-white/5 p-4">
-                  <p className="text-sm font-medium text-white">Arsabonnement</p>
-                  <p className="text-xs text-gray-400 mt-1">1 999 kr/ar · Alle kurs · Beste pris</p>
-                </div>
+                <p className="mt-1 text-2xl font-bold text-white">
+                  249 kr<span className="text-base font-normal text-gray-400">/mnd</span>
+                </p>
+                <p className="mt-1 text-sm text-gray-400">Alle kurs, ingen annonser</p>
+              </div>
+              <div className="rounded-xl border border-white/8 bg-white/4 p-5">
+                <p className="text-xs font-semibold uppercase tracking-widest text-gray-500">Årlig</p>
+                <p className="mt-1 text-2xl font-bold text-white">
+                  1 999 kr<span className="text-base font-normal text-gray-400">/år</span>
+                </p>
+                <p className="mt-1 text-sm text-gray-500">Beste pris — spar 1 000 kr</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Latest articles — editorial list */}
+      {articles.length > 0 && (
+        <section className="py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="flex items-end justify-between mb-10">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-violet-600">Innhold</p>
+                <h2 className="mt-1.5 text-3xl font-bold tracking-tight text-gray-950">Siste fra redaksjonen</h2>
+              </div>
+              <Link
+                href="/nyheter"
+                className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-violet-700 transition-colors"
+              >
+                Se alle <ArrowRightIcon className="size-3.5" />
+              </Link>
+            </div>
+
+            <div className="divide-y divide-gray-100">
+              {articles.map((article) => {
+                const path = categoryPaths[article.category] ?? "nyheter"
+                const label = categoryLabels[article.category] ?? article.category
+                return (
+                  <Link
+                    key={article.id}
+                    href={`/${path}/${article.slug}`}
+                    className="group flex items-start gap-6 py-6 hover:bg-gray-50 -mx-4 px-4 rounded-xl transition-colors"
+                  >
+                    <span className="mt-0.5 w-24 shrink-0 text-xs font-semibold uppercase tracking-widest text-violet-600">
+                      {label}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-gray-950 group-hover:text-violet-700 transition-colors leading-snug">
+                        {article.title}
+                      </h3>
+                      <p className="mt-1 text-sm text-gray-500 line-clamp-1">{article.excerpt}</p>
+                    </div>
+                    {article.readingTime && (
+                      <span className="shrink-0 text-xs text-gray-400 mt-0.5 hidden sm:block">
+                        {article.readingTime} min
+                      </span>
+                    )}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-950 mb-12">
+          <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 text-center mb-3">
+            Tilbakemeldinger
+          </p>
+          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-950 mb-14">
             Hva brukerne sier
           </h2>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             {testimonials.map((t) => (
-              <div key={t.author} className="rounded-2xl border border-gray-200 bg-white p-6">
-                <p className="text-gray-600 text-sm leading-relaxed">"{t.text}"</p>
-                <div className="mt-4">
-                  <p className="font-semibold text-sm text-gray-950">{t.author}</p>
-                  <p className="text-xs text-gray-400">{t.role}</p>
+              <div key={t.author}>
+                <p className="text-gray-600 leading-relaxed">"{t.text}"</p>
+                <div className="mt-5 flex items-center gap-3">
+                  <div className="size-9 rounded-full bg-violet-100 flex items-center justify-center text-sm font-bold text-violet-700 shrink-0">
+                    {t.author[0]}
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-950">{t.author}</p>
+                    <p className="text-xs text-gray-400">{t.role}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -305,37 +353,16 @@ export default async function LandingPage() {
         </div>
       </section>
 
-      {/* Latest articles */}
-      {articles.length > 0 && (
-        <section className="py-20 bg-gray-50">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="flex items-end justify-between mb-10">
-              <div>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-950">Siste nyheter</h2>
-                <p className="mt-2 text-gray-500">Hold deg oppdatert pa hva som skjer i AI-verdenen</p>
-              </div>
-              <Link href="/nyheter" className="text-sm font-medium text-blue-600 hover:text-blue-700">
-                Se alle nyheter &rarr;
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              {articles.map((article) => (
-                <ArticleCard key={article.id} article={article} />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* FAQ */}
       <section className="py-20">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl px-6 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 text-center mb-3">FAQ</p>
           <h2 className="text-center text-3xl font-bold tracking-tight text-gray-950 mb-12">
-            Vanlige sporsmal
+            Vanlige spørsmål
           </h2>
-          <div className="space-y-6">
+          <div className="divide-y divide-gray-100">
             {faqs.map((faq) => (
-              <div key={faq.question} className="rounded-2xl border border-gray-200 p-6">
+              <div key={faq.question} className="py-6">
                 <h3 className="font-semibold text-gray-950">{faq.question}</h3>
                 <p className="mt-2 text-sm text-gray-500 leading-relaxed">{faq.answer}</p>
               </div>
@@ -345,20 +372,24 @@ export default async function LandingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-[#080808]">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-white">Klar til a starte?</h2>
-          <p className="mt-4 text-lg text-blue-100">
-            Bli med tusenvis av nordmenn som lærer AI på AIvett.
+          <h2 className="text-4xl font-bold text-white tracking-tight">Klar til å starte?</h2>
+          <p className="mt-4 text-lg text-white/40">
+            Bli med nordmenn som lærer AI på AIvett.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
             <Link href="/registrer">
-              <Button size="lg" variant="secondary">
+              <Button size="lg" className="bg-violet-700 hover:bg-violet-600 text-white shadow-none">
                 Opprett gratis konto
               </Button>
             </Link>
             <Link href="/kurs">
-              <Button size="lg" className="bg-white/10 text-white hover:bg-white/20 border border-white/20">
+              <Button
+                size="lg"
+                variant="ghost"
+                className="text-white/50 hover:text-white hover:bg-white/10 border border-white/10"
+              >
                 Se kursene
               </Button>
             </Link>
