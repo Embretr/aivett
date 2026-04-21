@@ -1,0 +1,271 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Better Auth core models
+model User {
+  id            String    @id
+  name          String
+  email         String    @unique
+  emailVerified Boolean
+  image         String?
+  role          Role      @default(USER)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  sessions      Session[]
+  accounts      Account[]
+  accesses      UserCourseAccess[]
+  progress      LessonProgress[]
+  submissions   TaskSubmission[]
+  subscription  Subscription?
+  purchases     Purchase[]
+}
+
+model Session {
+  id        String   @id
+  expiresAt DateTime
+  token     String   @unique
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+}
+
+model Verification {
+  id         String    @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime? @default(now())
+  updatedAt  DateTime? @updatedAt
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+// Course platform models
+model Course {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  title       String
+  description String
+  price       Int
+  isFree      Boolean       @default(false)
+  isPublished Boolean       @default(false)
+  thumbnail   String?
+  level       Level         @default(BEGINNER)
+  category    CourseCategory
+  instructor  String        @default("AIvett")
+  duration    Int?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  modules     Module[]
+  accesses    UserCourseAccess[]
+  purchases   Purchase[]
+}
+
+enum Level {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum CourseCategory {
+  TUTORIAL
+  GUIDE
+  COMPARISON
+  TOOL_REVIEW
+}
+
+model Module {
+  id        String   @id @default(cuid())
+  courseId  String
+  course    Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  title     String
+  order     Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  lessons   Lesson[]
+}
+
+model Lesson {
+  id        String   @id @default(cuid())
+  moduleId  String
+  module    Module   @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  slug      String
+  title     String
+  order     Int
+  content   String   @db.Text
+  videoUrl  String?
+  duration  Int?
+  isPreview Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  quizzes   Quiz[]
+  tasks     Task[]
+  progress  LessonProgress[]
+
+  @@unique([moduleId, slug])
+}
+
+model Quiz {
+  id            String   @id @default(cuid())
+  lessonId      String
+  lesson        Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  question      String
+  options       Json
+  correctAnswer Int
+  explanation   String?
+  order         Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Task {
+  id          String     @id @default(cuid())
+  lessonId    String
+  lesson      Lesson     @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  title       String
+  description String     @db.Text
+  type        TaskType
+  order       Int        @default(0)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  submissions TaskSubmission[]
+}
+
+enum TaskType {
+  TEXT
+  CODE
+  MULTIPLE_CHOICE
+}
+
+model TaskSubmission {
+  id          String   @id @default(cuid())
+  taskId      String
+  task        Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  content     String   @db.Text
+  completedAt DateTime @default(now())
+
+  @@unique([taskId, userId])
+}
+
+model UserCourseAccess {
+  id         String     @id @default(cuid())
+  userId     String
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  courseId   String
+  course     Course     @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  accessType AccessType
+  expiresAt  DateTime?
+  grantedAt  DateTime   @default(now())
+
+  @@unique([userId, courseId])
+}
+
+enum AccessType {
+  PURCHASED
+  SUBSCRIPTION
+  GIFT
+}
+
+model LessonProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lessonId    String
+  lesson      Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  completedAt DateTime @default(now())
+
+  @@unique([userId, lessonId])
+}
+
+model Subscription {
+  id                   String    @id @default(cuid())
+  userId               String    @unique
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  stripeSubscriptionId String    @unique
+  stripeCustomerId     String
+  status               SubStatus
+  planId               String
+  currentPeriodEnd     DateTime
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+}
+
+enum SubStatus {
+  ACTIVE
+  CANCELED
+  PAST_DUE
+}
+
+model Purchase {
+  id                    String   @id @default(cuid())
+  userId                String
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  courseId              String
+  course                Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  stripePaymentIntentId String   @unique
+  stripeCustomerId      String?
+  amount                Int
+  completedAt           DateTime @default(now())
+}
+
+model Article {
+  id              String          @id @default(cuid())
+  slug            String          @unique
+  title           String
+  excerpt         String          @db.Text
+  content         String          @db.Text
+  category        ArticleCategory
+  published       Boolean         @default(false)
+  publishedAt     DateTime?
+  author          String          @default("AIvett redaksjon")
+  readingTime     Int?
+  metaTitle       String?
+  metaDescription String?
+  ogImage         String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+}
+
+enum ArticleCategory {
+  NEWS
+  GUIDE
+  TUTORIAL
+  COMPARISON
+}
+
