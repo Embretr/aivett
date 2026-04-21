@@ -18,7 +18,7 @@ export function Logo({ className, light }: { className?: string; light?: boolean
         <line x1="7.4" y1="20.5" x2="24.6" y2="11.5" stroke="white" strokeWidth="2.2" strokeLinecap="round" />
       </svg>
       <span className={cn(
-        "text-[1.05rem] font-bold tracking-tight select-none transition-colors duration-300",
+        "text-[1.05rem] font-medium tracking-tight select-none transition-colors duration-300",
         light ? "text-white" : "text-gray-950"
       )}>
         AI<span className={cn(

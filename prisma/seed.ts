@@ -2160,14 +2160,43 @@ async function upsertArticle(data: {
 async function main() {
   console.log("Seeding database...")
 
+  const courseDescription = "Lær deg å bruke ChatGPT effektivt fra bunnen av. Dette kurset gir deg en praktisk introduksjon til verdens mest populære AI-verktøy."
+
+  const lesson1Content = `# Hva er ChatGPT?
+
+ChatGPT er en AI-drevet chatbot utviklet av OpenAI. Den bruker store språkmodeller (LLM) til å generere menneskelig tekst basert på det du skriver til den.
+
+## Hva kan du bruke ChatGPT til?
+
+- Skrive og redigere tekst
+- Svare på spørsmål
+- Hjelpe med koding
+- Oversette tekst
+- Brainstorme ideer
+
+## Kom i gang
+
+For å bruke ChatGPT, gå til chat.openai.com og opprett en gratis konto.`
+
+  const lesson2Content = `# Din første melding til ChatGPT
+
+Nå er det på tide å sende din første melding! Her er noen tips for å få gode svar.
+
+## Vær spesifikk
+
+Jo mer presis du er, jo bedre svar får du.
+
+**Dårlig:** "Hjelp meg med en e-post"
+
+**Bra:** "Skriv en profesjonell e-post til en klient som forklarer at leveransen er forsinket med 3 dager på grunn av tekniske problemer"`
+
   // Seed free course
   const freeCourse = await db.course.upsert({
     where: { slug: "kom-i-gang-med-chatgpt" },
     create: {
       slug: "kom-i-gang-med-chatgpt",
       title: "Kom i gang med ChatGPT",
-      description:
-        "Laer deg a bruke ChatGPT effektivt fra bunnen av. Dette kurset gir deg en praktisk introduksjon til verdens mest populaere AI-verktoy.",
+      description: courseDescription,
       price: 0,
       isFree: true,
       isPublished: true,
@@ -2188,21 +2217,7 @@ async function main() {
                   order: 1,
                   isPreview: true,
                   duration: 5,
-                  content: `# Hva er ChatGPT?
-
-ChatGPT er en AI-drevet chatbot utviklet av OpenAI. Den bruker store sprakmodeller (LLM) til a generere menneskelig tekst basert pa det du skriver til den.
-
-## Hva kan du bruke ChatGPT til?
-
-- Skrive og redigere tekst
-- Svare pa sporsmal
-- Hjelpe med koding
-- Oversette tekst
-- Brainstorme ideer
-
-## Kom i gang
-
-For a bruke ChatGPT, ga til chat.openai.com og opprett en gratis konto.`,
+                  content: lesson1Content,
                   quizzes: {
                     create: [
                       {
@@ -2217,26 +2232,16 @@ For a bruke ChatGPT, ga til chat.openai.com og opprett en gratis konto.`,
                 },
                 {
                   slug: "din-forste-melding",
-                  title: "Din forste melding til ChatGPT",
+                  title: "Din første melding til ChatGPT",
                   order: 2,
                   duration: 10,
-                  content: `# Din forste melding til ChatGPT
-
-Na er det pa tide a sende din forste melding! Her er noen tips for a fa gode svar.
-
-## Vaer spesifikk
-
-Jo mer presis du er, jo bedre svar far du.
-
-**Darlig:** "Hjelp meg med en e-post"
-
-**Bra:** "Skriv en profesjonell e-post til en klient som forklarer at leveransen er forsinket med 3 dager pa grunn av tekniske problemer"`,
+                  content: lesson2Content,
                   tasks: {
                     create: [
                       {
-                        title: "Send din forste melding",
+                        title: "Send din første melding",
                         description:
-                          "Ga til ChatGPT og spor den om a forklare kunstig intelligens med enkle ord. Lim inn svaret du fikk her.",
+                          "Gå til ChatGPT og spør den om å forklare kunstig intelligens med enkle ord. Lim inn svaret du fikk her.",
                         type: "TEXT" as const,
                         order: 1,
                       },
@@ -2249,9 +2254,31 @@ Jo mer presis du er, jo bedre svar far du.
         ],
       },
     },
-    update: {},
+    update: { description: courseDescription },
   })
   console.log("Course:", freeCourse.title)
+
+  // Fix existing lessons in DB (upsert can't update nested records)
+  await db.lesson.updateMany({
+    where: { slug: "hva-er-chatgpt" },
+    data: { title: "Hva er ChatGPT?", content: lesson1Content },
+  })
+  await db.lesson.updateMany({
+    where: { slug: "din-forste-melding" },
+    data: { title: "Din første melding til ChatGPT", content: lesson2Content },
+  })
+  // Fix task titles/descriptions
+  const lesson2 = await db.lesson.findFirst({ where: { slug: "din-forste-melding" } })
+  if (lesson2) {
+    await db.task.updateMany({
+      where: { lessonId: lesson2.id },
+      data: {
+        title: "Send din første melding",
+        description: "Gå til ChatGPT og spør den om å forklare kunstig intelligens med enkle ord. Lim inn svaret du fikk her.",
+      },
+    })
+  }
+  console.log("Fixed lesson content æøå")
 
   // Seed news articles
   console.log("Seeding news articles...")

@@ -14,7 +14,6 @@ const navLinks = [
   { href: "/nyheter", label: "Nyheter" },
   { href: "/guider", label: "Guider" },
   { href: "/sammenligninger", label: "Sammenligninger" },
-  { href: "/priser", label: "Priser" },
 ]
 
 export function Navbar() {

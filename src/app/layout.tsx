@@ -1,12 +1,12 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Space_Grotesk } from "next/font/google"
 import { Toaster } from "sonner"
 import { TRPCReactProvider } from "../trpc/react"
 import { websiteJsonLd, organizationJsonLd } from "../lib/seo"
 import "./globals.css"
 
-const inter = Inter({
-  variable: "--font-inter",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
 })
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="nb" className={`${inter.variable} h-full`}>
+    <html lang="nb" className={`${spaceGrotesk.variable} h-full`}>
       <head>
         <script
           type="application/ld+json"
