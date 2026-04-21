@@ -2207,7 +2207,7 @@ For a bruke ChatGPT, ga til chat.openai.com og opprett en gratis konto.`,
                     create: [
                       {
                         question: "Hvem utviklet ChatGPT?",
-                        options: JSON.stringify(["Google", "OpenAI", "Microsoft", "Meta"]),
+                        options: ["Google", "OpenAI", "Microsoft", "Meta"],
                         correctAnswer: 1,
                         explanation: "ChatGPT ble utviklet av OpenAI, som ble grunnlagt i 2015.",
                         order: 1,

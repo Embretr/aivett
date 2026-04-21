@@ -146,7 +146,7 @@ export default async function LessonPage({
             key={quiz.id}
             quiz={{
               ...quiz,
-              options: quiz.options as string[],
+              options: (typeof quiz.options === "string" ? JSON.parse(quiz.options) : quiz.options) as string[],
             }}
           />
         ))}
