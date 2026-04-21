@@ -128,7 +128,7 @@ export default function PricingPage() {
                 {plan.featured && (
                   <div className="mb-4">
                     <span className="rounded-full bg-blue-600 px-3 py-1 text-xs font-semibold text-white">
-                      Mest populaer
+                      Mest populær
                     </span>
                   </div>
                 )}

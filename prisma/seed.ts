@@ -14,7 +14,7 @@ async function main() {
       slug: "kom-i-gang-med-chatgpt",
       title: "Kom i gang med ChatGPT",
       description:
-        "Laer deg a bruke ChatGPT effektivt fra bunnen av. Dette kurset gir deg en praktisk introduksjon til verdens mest populaere AI-verktoy.",
+        "Lær deg å bruke ChatGPT effektivt fra bunnen av. Dette kurset gir deg en praktisk introduksjon til verdens mest populære AI-verktøy.",
       price: 0,
       isFree: true,
       isPublished: true,
@@ -71,7 +71,7 @@ For a bruke ChatGPT, ga til [chat.openai.com](https://chat.openai.com) og oppret
 
 Na er det pa tide a sende din forste melding! Her er noen tips for a fa gode svar.
 
-## Vaer spesifikk
+## Vær spesifikk
 
 Jo mer presis du er, jo bedre svar far du. Sammenlign:
 

@@ -70,7 +70,7 @@ const testimonials = [
   {
     text: "Jeg bruker AIvett til a holde meg oppdatert pa nyheter og prover kursene pa fritiden.",
     author: "Kristin M.",
-    role: "Laerer",
+    role: "Lærer",
   },
 ]
 
@@ -141,7 +141,7 @@ export default async function LandingPage() {
         <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-24 lg:px-8 lg:pt-24 lg:pb-32">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-6 inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700">
-              Norges forste AI-laeringsplattform
+              Norges første AI-læringsplattform
             </div>
             <h1 className="text-5xl font-bold tracking-tight text-gray-950 sm:text-6xl lg:text-7xl">
               Forsta og bruk{" "}
@@ -175,7 +175,7 @@ export default async function LandingPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-950">
-              Alt du trenger for a laere AI
+              Alt du trenger for å lære AI
             </h2>
             <p className="mt-3 text-lg text-gray-500">
               Fra nybegynner til ekspert — pa dine premisser
@@ -199,7 +199,7 @@ export default async function LandingPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="flex items-end justify-between mb-10">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-950">Populaere kurs</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-950">Populære kurs</h2>
                 <p className="mt-2 text-gray-500">Kom i gang med det beste innholdet vart</p>
               </div>
               <Link href="/kurs" className="text-sm font-medium text-blue-600 hover:text-blue-700">
@@ -270,7 +270,7 @@ export default async function LandingPage() {
                   <div className="flex items-center justify-between">
                     <p className="text-sm font-medium text-white">Manedlig abonnement</p>
                     <span className="rounded-full bg-blue-600 px-2 py-0.5 text-xs font-medium text-white">
-                      Populaer
+                      Populær
                     </span>
                   </div>
                   <p className="text-xs text-gray-400 mt-1">249 kr/maned · Alle kurs</p>
@@ -349,7 +349,7 @@ export default async function LandingPage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <h2 className="text-3xl font-bold text-white">Klar til a starte?</h2>
           <p className="mt-4 text-lg text-blue-100">
-            Bli med tusenvis av nordmenn som laerer AI pa AIvett.
+            Bli med tusenvis av nordmenn som lærer AI på AIvett.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Link href="/registrer">

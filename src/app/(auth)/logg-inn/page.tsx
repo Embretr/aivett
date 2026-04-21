@@ -14,7 +14,7 @@ import { Suspense } from "react"
 
 const loginSchema = z.object({
   email: z.string().email("Ugyldig e-postadresse"),
-  password: z.string().min(8, "Passord ma vaere minst 8 tegn"),
+  password: z.string().min(8, "Passord må være minst 8 tegn"),
 })
 
 type LoginForm = z.infer<typeof loginSchema>

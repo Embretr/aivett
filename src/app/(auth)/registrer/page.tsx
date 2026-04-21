@@ -12,9 +12,9 @@ import { useRouter } from "next/navigation"
 import { toast } from "sonner"
 
 const registerSchema = z.object({
-  name: z.string().min(2, "Navn ma vaere minst 2 tegn"),
+  name: z.string().min(2, "Navn må være minst 2 tegn"),
   email: z.string().email("Ugyldig e-postadresse"),
-  password: z.string().min(8, "Passord ma vaere minst 8 tegn"),
+  password: z.string().min(8, "Passord må være minst 8 tegn"),
 })
 
 type RegisterForm = z.infer<typeof registerSchema>
