@@ -71,3 +71,31 @@ npm run playwright:install  # First time only
 npm run test:e2e            # Run all E2E tests
 npm run test:e2e:ui         # Interactive Playwright UI
 ```
+
+## Deploy Configuration (configured by /setup-deploy)
+- Platform: Railway
+- Production URL: https://aivett-web.up.railway.app
+- Deploy workflow: `railway up --service aivett-web` or GitHub autodeploy (configure in Railway dashboard)
+- Deploy status command: `railway status`
+- Merge method: squash
+- Project type: web app
+- Post-deploy health check: https://aivett-web.up.railway.app
+
+### Custom deploy hooks
+- Pre-merge: `npm run build` (SKIP_ENV_VALIDATION=1)
+- Deploy trigger: `railway up --service aivett-web --detach`
+- Deploy status: `railway logs --service aivett-web`
+- Health check: https://aivett-web.up.railway.app
+
+### Railway project details
+- Project ID: 382c4d12-f3d5-4430-9f1b-443685006df8
+- Web service: aivett-web
+- Database: Postgres (internal URL via ${{Postgres.DATABASE_URL}})
+- Dashboard: https://railway.com/project/382c4d12-f3d5-4430-9f1b-443685006df8
+
+### Stripe env vars still needed (add via Railway dashboard)
+- `STRIPE_SECRET_KEY`
+- `STRIPE_WEBHOOK_SECRET`
+- `STRIPE_MONTHLY_PRICE_ID`
+- `STRIPE_ANNUAL_PRICE_ID`
+- `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`
