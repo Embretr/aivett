@@ -83,7 +83,7 @@ Anthropic har sluppet Claude 3.7 Sonnet, og den er raskt blitt favoritt blant ut
 
 ## Hva er nytt?
 
-Modellen introduserer "extended thinking" — en modus der Claude tenker gjennom problemer steg for steg.
+Modellen introduserer "extended thinking"  -  en modus der Claude tenker gjennom problemer steg for steg.
 
 ## Koding
 
@@ -104,7 +104,7 @@ Meta har lansert Llama 4, og den er tilgjengelig gratis for nedlasting og bruk.
 
 ## Hvorfor er dette viktig?
 
-Med en apen modell kan hvem som helst kjore avansert AI pa egne servere — uten a sende data til OpenAI eller Google.
+Med en apen modell kan hvem som helst kjore avansert AI pa egne servere  -  uten a sende data til OpenAI eller Google.
 
 ## Modellstorrelser
 
@@ -215,7 +215,7 @@ Næringslivet mener strategien er for forsiktig sammenlignet med hva USA og Kina
   },
   {
     slug: "sora-openai-video-ai",
-    title: "Sora: OpenAIs AI-videogenerator er her — og den er imponerende",
+    title: "Sora: OpenAIs AI-videogenerator er her  -  og den er imponerende",
     excerpt: "OpenAI har lansert Sora, en AI som lager realistiske videoer fra tekstbeskrivelser. Vi tester grensene.",
     content: `# Sora er her
 
@@ -253,7 +253,7 @@ DeepSeek trente R1 for anslagsvis 6 millioner dollar. GPT-4 kostet anslatt over 
 ## Tekniske gjennombrudd
 
 - Mixture-of-Experts arkitektur som reduserer beregningskostnader
-- Apen kildekode — alle kan laste ned og kjore modellen
+- Apen kildekode  -  alle kan laste ned og kjore modellen
 - Sammenlignbar ytelse med o1 pa matematikk og koding
 
 ## Bekymringer
@@ -315,7 +315,7 @@ Le Chat er generelt litt svakere pa engelskspraklige oppgaver, men konkurrerer g
   {
     slug: "perplexity-ai-ny-sokemotor",
     title: "Perplexity AI: Slik endrer den maten vi soker pa nettet",
-    excerpt: "Perplexity er ikke bare en ny sokemotor — den er en ny mate a finne informasjon pa. Vi ser pa hva som gjor den spesiell.",
+    excerpt: "Perplexity er ikke bare en ny sokemotor  -  den er en ny mate a finne informasjon pa. Vi ser pa hva som gjor den spesiell.",
     content: `# Perplexity AI
 
 Perplexity kombinerer et sokeindeks med en storsprakmodell og gir deg direkte svar med kildehenvisninger.
@@ -343,7 +343,7 @@ Perplexity Pro koster 20 dollar per maned og gir tilgang til GPT-4o og Claude.`,
   {
     slug: "github-copilot-agent-mode",
     title: "GitHub Copilot Agent Mode: AI som skriver hele funksjoner selv",
-    excerpt: "GitHub Copilot har fatt Agent Mode, der AI-en ikke bare foreslaar kode — den implementerer hele oppgaver autonomt.",
+    excerpt: "GitHub Copilot har fatt Agent Mode, der AI-en ikke bare foreslaar kode  -  den implementerer hele oppgaver autonomt.",
     content: `# GitHub Copilot Agent Mode
 
 GitHub har lansert Agent Mode for Copilot, og det endrer fundamentalt hva AI kan gjore for utviklere.
@@ -360,7 +360,7 @@ I stedet for a foreslaa linjer med kode, kan Copilot na planlegge og implementer
 
 ## Eksempel
 
-"Legg til pagineringsstotte til denne API-endepunktet med cursor-basert paginering" — og Copilot gjor alt.
+"Legg til pagineringsstotte til denne API-endepunktet med cursor-basert paginering"  -  og Copilot gjor alt.
 
 ## Begrensninger
 
@@ -481,7 +481,7 @@ Maks 50 kilder per notatbok, maks 500 000 ord per kilde.`,
     excerpt: "To nye AI-verktoy lar hvem som helst lage profesjonell-lydende musikk fra en tekstbeskrivelse. Musikkbransjen er bekymret.",
     content: `# AI-musikk med Suno og Udio
 
-Suno og Udio er to AI-tjenester som lar deg lage komplette sanger — med vokal, instrument og produksjon — fra en tekstbeskrivelse.
+Suno og Udio er to AI-tjenester som lar deg lage komplette sanger  -  med vokal, instrument og produksjon  -  fra en tekstbeskrivelse.
 
 ## Slik fungerer det
 
@@ -573,7 +573,7 @@ Start bredt, be sa om presiseringer: "Gjor dette kortere", "Gjor tonen mer uform
   {
     slug: "chatgpt-for-arbeid-guide",
     title: "ChatGPT pa jobben: 15 konkrete mater a bruke det i hverdagen",
-    excerpt: "Praktiske eksempler pa hvordan du kan bruke ChatGPT til a spare tid og levere bedre arbeid — uansett bransje.",
+    excerpt: "Praktiske eksempler pa hvordan du kan bruke ChatGPT til a spare tid og levere bedre arbeid  -  uansett bransje.",
     content: `# ChatGPT pa jobben
 
 Her er 15 konkrete mater a bruke ChatGPT som sparer deg tid hver dag.
@@ -626,9 +626,9 @@ I /imagine-boksen skriver du beskrivelsen din pa engelsk:
 
 ## Viktige parametere
 
-- \`--ar 16:9\` — Bildeformat (widescreen)
-- \`--style raw\` — Mer fotografisk, mindre "AI-estetikk"
-- \`--v 6.1\` — Siste versjon
+- \`--ar 16:9\`  -  Bildeformat (widescreen)
+- \`--style raw\`  -  Mer fotografisk, mindre "AI-estetikk"
+- \`--v 6.1\`  -  Siste versjon
 
 ## Tips for bedre bilder
 
@@ -645,7 +645,7 @@ I /imagine-boksen skriver du beskrivelsen din pa engelsk:
 
 - For vage beskrivelser gir generiske bilder
 - Hender og tekst er fortsatt utfordrende
-- Ansikter kan vare ustabile — bruk --cref for konsistens`,
+- Ansikter kan vare ustabile  -  bruk --cref for konsistens`,
     readingTime: 7,
   },
   {
@@ -691,7 +691,7 @@ Claude har kunnskapsgrense og kan ikke soke nettet uten verktoy.`,
     excerpt: "ChatGPT og andre AI-verktoy kan vaere kraftige studieverktoy. Her er en praktisk guide som holder deg pa rett side av reglene.",
     content: `# AI for studenter
 
-AI kan dramatisk forbedre studiekvaliteten din — hvis du bruker det riktig.
+AI kan dramatisk forbedre studiekvaliteten din  -  hvis du bruker det riktig.
 
 ## Lovlig og nyttig bruk
 
@@ -760,7 +760,7 @@ Generell tommelfingerregel: Unnga a spesifisere levende kunstneres navn som stil
   {
     slug: "github-copilot-setup-guide",
     title: "GitHub Copilot: Komplett oppsettguide for VS Code",
-    excerpt: "Fra installasjon til avansert bruk — en steg-for-steg guide til GitHub Copilot for norske utviklere.",
+    excerpt: "Fra installasjon til avansert bruk  -  en steg-for-steg guide til GitHub Copilot for norske utviklere.",
     content: `# GitHub Copilot oppsett
 
 ## Installasjon
@@ -787,14 +787,14 @@ function validateNorwegianSSN(ssn) {
 
 ## Nyttige kommandoer i Chat
 
-- \`/explain\` — Forklar valgt kode
-- \`/fix\` — Foresla fix pa feil
-- \`/tests\` — Generer tester for valgt kode
-- \`/doc\` — Skriv dokumentasjon
+- \`/explain\`  -  Forklar valgt kode
+- \`/fix\`  -  Foresla fix pa feil
+- \`/tests\`  -  Generer tester for valgt kode
+- \`/doc\`  -  Skriv dokumentasjon
 
 ## Tips
 
-Skriv beskrivende variabelnavn og funksjonsnavn — Copilot bruker disse som kontekst.`,
+Skriv beskrivende variabelnavn og funksjonsnavn  -  Copilot bruker disse som kontekst.`,
     readingTime: 6,
   },
   {
@@ -803,7 +803,7 @@ Skriv beskrivende variabelnavn og funksjonsnavn — Copilot bruker disse som kon
     excerpt: "Notion AI er integrert direkte i arbeidsomradet ditt. Vi viser de mest nyttige funksjonene for produktivitet.",
     content: `# Notion AI
 
-Notion AI er ikke et separat verktoy — det lever inne i Notion-sidene og databasene dine.
+Notion AI er ikke et separat verktoy  -  det lever inne i Notion-sidene og databasene dine.
 
 ## Aktivere Notion AI
 
@@ -812,7 +812,7 @@ Skriv \`/ai\` pa en Notion-side for a aktivere AI-assistenten.
 ## De mest nyttige funksjonene
 
 ### Oppsummer notater
-Marker tekst og velg "Summarize" — perfekt for lange motenotater.
+Marker tekst og velg "Summarize"  -  perfekt for lange motenotater.
 
 ### Forbedre skriving
 "Improve writing", "Fix spelling and grammar", "Make shorter"
@@ -838,7 +838,7 @@ Notion AI koster 10 dollar ekstra per bruker per maned utover Notion-abonnemente
   {
     slug: "ai-markedsforing-guide",
     title: "AI i markedsføring: 10 verktoy og hvordan du bruker dem",
-    excerpt: "Fra tekstproduksjon til analyse — her er de beste AI-verktoyene for markedsforere i 2025.",
+    excerpt: "Fra tekstproduksjon til analyse  -  her er de beste AI-verktoyene for markedsforere i 2025.",
     content: `# AI for markedsforere
 
 ## Innholdsproduksjon
@@ -907,7 +907,7 @@ Lim inn feilmeldingen OG relevant kode:
 
 - Kunnskap er avskaret til treningsdato
 - Kan dikte opp biblioteker som ikke finnes (hallusinasjon)
-- Kjenner ikke kodebasen din — gi kontekst
+- Kjenner ikke kodebasen din  -  gi kontekst
 
 ## Beste praksis
 
@@ -917,13 +917,13 @@ Lim inn feilmeldingen OG relevant kode:
 
 ## Cursor vs ChatGPT for koding
 
-For daglig bruk anbefales Cursor — den har tilgang til hele kodebasen din.`,
+For daglig bruk anbefales Cursor  -  den har tilgang til hele kodebasen din.`,
     readingTime: 6,
   },
   {
     slug: "copilot-windows-11-guide",
     title: "Microsoft Copilot i Windows 11: Alt du kan gjore med den innebygde AI-en",
-    excerpt: "Windows 11 har Copilot innebygd. Her er alt du faktisk kan gjore med den — og hva som er skuffende.",
+    excerpt: "Windows 11 har Copilot innebygd. Her er alt du faktisk kan gjore med den  -  og hva som er skuffende.",
     content: `# Copilot i Windows 11
 
 ## Aktivere Copilot
@@ -959,7 +959,7 @@ Bruk Copilot for raske PC-oppgaver, og ChatGPT eller Claude for dypere arbeid.`,
   {
     slug: "ai-cv-søknad-guide",
     title: "Slik bruker du AI til a skrive CV og søknad som skiller seg ut",
-    excerpt: "AI kan hjelpe deg a skrive bedre CV og soknadsbrev — men bare hvis du gjor det pa riktig mate. Her er guiden.",
+    excerpt: "AI kan hjelpe deg a skrive bedre CV og soknadsbrev  -  men bare hvis du gjor det pa riktig mate. Her er guiden.",
     content: `# AI for CV og soknad
 
 ## Viktig forbehold
@@ -993,7 +993,7 @@ Bruk AI til a forberede deg pa intervju:
     slug: "perplexity-guide",
     title: "Perplexity AI guide: Slik bruker du den beste AI-sokemotoren",
     excerpt: "Perplexity er mer enn et Google-alternativ. Her er avanserte teknikker for a fa mest ut av AI-soking.",
-    content: `# Perplexity AI — komplett guide
+    content: `# Perplexity AI  -  komplett guide
 
 ## Grunnleggende bruk
 
@@ -1032,7 +1032,7 @@ Perplexity kan fortsatt hallusinere pa svakt dokumenterte emner. Sjekk alltid ki
   {
     slug: "ai-epost-guide",
     title: "Skriv bedre e-poster med AI: Maler og teknikker",
-    excerpt: "Fra kaldt salgsoppsok til vanskelige tilbakemeldinger — her er hvordan AI hjelper deg a skrive e-poster som faktisk virker.",
+    excerpt: "Fra kaldt salgsoppsok til vanskelige tilbakemeldinger  -  her er hvordan AI hjelper deg a skrive e-poster som faktisk virker.",
     content: `# AI for e-postskriving
 
 ## Malen som virker
@@ -1133,7 +1133,7 @@ Ulempe: Lavere kvalitet pa komplekse setninger.
 "Oversett til norsk (bokmaal). Behold formell tone. Mal: norske næringslivsledere."
 
 ### Lokalisering
-"Oversett og lokaliser — erstatt amerikanske eksempler med norske."
+"Oversett og lokaliser  -  erstatt amerikanske eksempler med norske."
 
 ### Fagsprak
 "Oversett dette medisinske sammendraget til norsk. Bruk korrekt norsk medisinsk terminologi."
@@ -1208,7 +1208,7 @@ Automatisk bokforing av fakturaer via OCR og maskinlaering.
 
 ## Skatterapportering
 
-ChatGPT kan forklare skattefradrag og hjelpe deg a strukturere informasjon, men ALDRI stol pa AI for endelig skatterad — bruk autorisert regnskapsforer.
+ChatGPT kan forklare skattefradrag og hjelpe deg a strukturere informasjon, men ALDRI stol pa AI for endelig skatterad  -  bruk autorisert regnskapsforer.
 
 ## Analyse-prompts som virker
 
@@ -1270,11 +1270,11 @@ Bruk ControlNet for a kontrollere komposisjon og positurer. Dette er der Stable 
 
 ## 1. Custom Instructions
 
-Under innstillinger → "Customize ChatGPT". Skriv bakgrunn om deg selv og preferansene dine — dette huskes pa tvers av alle samtaler.
+Under innstillinger → "Customize ChatGPT". Skriv bakgrunn om deg selv og preferansene dine  -  dette huskes pa tvers av alle samtaler.
 
 ## 2. Memory
 
-ChatGPT kan na huske ting pa tvers av samtaler. Si "Husk at jeg er en norsk freelance-skribent som skriver om teknologi" — og det huskes.
+ChatGPT kan na huske ting pa tvers av samtaler. Si "Husk at jeg er en norsk freelance-skribent som skriver om teknologi"  -  og det huskes.
 
 ## 3. GPT-4o med stem
 
@@ -1349,7 +1349,7 @@ Begge koster 20 $/maned for Plus/Pro.
   {
     slug: "chatgpt-vs-gemini",
     title: "ChatGPT vs Google Gemini: Googlebrukerens dilemma",
-    excerpt: "Hvis du allerede bor i Google-universet — bor du bytte til Gemini? Vi tester begge grundig.",
+    excerpt: "Hvis du allerede bor i Google-universet  -  bor du bytte til Gemini? Vi tester begge grundig.",
     content: `# ChatGPT vs Google Gemini
 
 ## Integrasjon
@@ -1402,7 +1402,7 @@ Midjourney v6.1 produserer konsekvent mer estetisk imponerende bilder. DALL-E 3 
 ## Instruksjonsfolging
 
 **Vinner: DALL-E 3**
-DALL-E 3 folger komplekse instruksjoner bedre. Midjourney tolker friere — noe som kan vaere bra eller darlig.
+DALL-E 3 folger komplekse instruksjoner bedre. Midjourney tolker friere  -  noe som kan vaere bra eller darlig.
 
 ## Tekst i bilder
 
@@ -1459,7 +1459,7 @@ Cursor kan indexere hele kodebasen din og svare pa sporsmaal om den.
 ## GitHub-integrasjon
 
 **Vinner: GitHub Copilot**
-Pull request-oppsummering, kodegjennomgang pa GitHub.com — Cursor har ingenting av dette.
+Pull request-oppsummering, kodegjennomgang pa GitHub.com  -  Cursor har ingenting av dette.
 
 ## Pris
 
@@ -1476,7 +1476,7 @@ Pull request-oppsummering, kodegjennomgang pa GitHub.com — Cursor har ingentin
   {
     slug: "chatgpt-plus-vs-copilot-pro",
     title: "ChatGPT Plus vs Microsoft Copilot Pro: 20 dollar godt brukt?",
-    excerpt: "Begge koster omtrent like mye. Men hva far du egentlig for pengene — og hvem bor velge hva?",
+    excerpt: "Begge koster omtrent like mye. Men hva far du egentlig for pengene  -  og hvem bor velge hva?",
     content: `# ChatGPT Plus vs Microsoft Copilot Pro
 
 ## ChatGPT Plus (20 $/maned)
@@ -1870,7 +1870,7 @@ GPT-4o er kraftigere enn modellen bak Notion AI. For komplekse oppgaver vil Chat
 ## Integrasjon i arbeidsflyt
 
 **Vinner: Notion AI**
-Autofyll i databaser, oppsummering av sider, aksjonspoeng fra notat — alt skjer der du allerede jobber.
+Autofyll i databaser, oppsummering av sider, aksjonspoeng fra notat  -  alt skjer der du allerede jobber.
 
 ## Pris
 
@@ -1900,7 +1900,7 @@ Bruk begge: Notion AI for kontekstbevisst arbeid inne i Notion, ChatGPT for dype
 
 ## Hva er Google AI Overviews?
 
-Google AI Overviews er AI-genererte sammendrag okt av sokeresultatene — aktivert i USA og noen europeiske land.
+Google AI Overviews er AI-genererte sammendrag okt av sokeresultatene  -  aktivert i USA og noen europeiske land.
 
 ## Kildetransparens
 
@@ -1934,7 +1934,7 @@ For norske sporsmal og lokal informasjon: Google. For research og faktatunge spo
   },
   {
     slug: "gratis-ai-bildegeneratorer",
-    title: "De beste gratis AI-bildegeneratorene i 2025 — testet og rangert",
+    title: "De beste gratis AI-bildegeneratorene i 2025  -  testet og rangert",
     excerpt: "Vil du generere AI-bilder uten a betale? Vi tester alle de beste gratis alternativene og rangerer dem aert.",
     content: `# Gratis AI-bildegeneratorer 2025
 
@@ -2021,7 +2021,7 @@ For profesjonell utvikling er Cursor det klare valget i 2025. GitHub Copilot er 
 
 ## Hva er "extended thinking"?
 
-Begge modellene kan bruke ekstra tid pa a "tenke" gjennom et problem for de svarer — lignende Chain-of-Thought men mer autonomt.
+Begge modellene kan bruke ekstra tid pa a "tenke" gjennom et problem for de svarer  -  lignende Chain-of-Thought men mer autonomt.
 
 ## Matematikk
 
@@ -2036,7 +2036,7 @@ SWE-bench (real-world kode-oppgaver): Claude 3.7 Extended: 70%, o1: 48%.
 ## Naturlig sprak og skriving
 
 **Vinner: Claude**
-o1 er ikke god pa kreativ skriving — den er optimert for logikk, ikke prosa.
+o1 er ikke god pa kreativ skriving  -  den er optimert for logikk, ikke prosa.
 
 ## Hastighet
 
@@ -2123,7 +2123,7 @@ Forsker pa norskspraklige AI-modeller. Ikke kommersielt tilgjengelig enna.
 ## Internasjonale alternativer tilgjengelig i Norge
 
 Alle store tjenester (ChatGPT, Claude, Gemini) er tilgjengelig i Norge.
-De lagrer typisk data i USA — noe som kan vaere et problem for sensitive data.
+De lagrer typisk data i USA  -  noe som kan vaere et problem for sensitive data.
 
 ## Fremtiden
 
