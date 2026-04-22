@@ -127,9 +127,8 @@ export default async function LandingPage() {
             </div>
 
             <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-[4.5rem] lg:leading-[1.08]">
-              Forstå og bruk<br />
-              <span className="text-violet-400">kunstig intelligens</span><br />
-              på norsk.
+              Lær deg å bruke<br />
+              <span className="text-violet-400">AI effektivt</span>
             </h1>
 
             <p className="mt-8 text-lg leading-8 text-white/50 max-w-xl">

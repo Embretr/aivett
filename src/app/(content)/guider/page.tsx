@@ -106,7 +106,7 @@ export default async function GuidesPage() {
 
       {/* Guide list — horizontal cards with accent bar */}
       <section className="py-16">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {guides.length === 0 ? (
             <div className="py-24 text-center">
               <p className="text-gray-400">Ingen guider publisert enn. Kom tilbake snart!</p>
