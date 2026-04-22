@@ -15,6 +15,7 @@ const navLinks = [
   { href: "/guider", label: "Guider" },
   { href: "/veiledninger", label: "Veiledninger" },
   { href: "/sammenligninger", label: "Sammenligninger" },
+  { href: "/konsultasjon", label: "Konsultasjon" },
 ]
 
 export function Navbar() {

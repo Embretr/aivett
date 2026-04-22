@@ -269,3 +269,14 @@ enum ArticleCategory {
   COMPARISON
 }
 
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  company   String?
+  phone     String?
+  service   String
+  message   String   @db.Text
+  createdAt DateTime @default(now())
+}
+

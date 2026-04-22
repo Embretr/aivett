@@ -153,7 +153,7 @@ export default async function LandingPage() {
               </Link>
             </div>
 
-            <p className="mt-5 text-sm text-white/25">Ingen kredittkort nødvendig</p>
+
           </div>
         </div>
       </section>
