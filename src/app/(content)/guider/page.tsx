@@ -35,7 +35,7 @@ export default async function GuidesPage() {
   return (
     <div>
       {/* Hero — deep violet, diamond grid + hexagon outlines */}
-      <section className="relative overflow-hidden bg-violet-950 py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-violet-950 py-20 lg:py-28">
         {/* SVG diamond grid */}
         <svg
           className="pointer-events-none absolute inset-0 h-full w-full"
@@ -91,15 +91,11 @@ export default async function GuidesPage() {
           <p className="text-sm font-medium tracking-widest text-violet-400 uppercase">
             AIvett guider
           </p>
-          <h1 className="mt-3 text-4xl font-bold tracking-tight text-white lg:text-6xl">
-            Dyptgående<br />
-            <span className="text-violet-300">AI-guider</span>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-white lg:text-6xl">
+            Dyptgående AI-guider
           </h1>
-          <p className="mt-5 max-w-lg text-lg text-violet-100/60">
+          <p className="mt-4 max-w-xl text-lg text-violet-200/50">
             Alt du trenger å vite om AI-verktøy og konsepter — grundig gjennomgått på norsk.
-          </p>
-          <p className="mt-6 text-sm text-violet-400/60">
-            {guides.length} guider tilgjengelig
           </p>
         </div>
       </section>
