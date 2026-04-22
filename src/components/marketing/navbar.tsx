@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/kurs", label: "Kurs" },
   { href: "/nyheter", label: "Nyheter" },
   { href: "/guider", label: "Guider" },
+  { href: "/veiledninger", label: "Veiledninger" },
   { href: "/sammenligninger", label: "Sammenligninger" },
 ]
 

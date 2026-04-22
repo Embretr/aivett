@@ -112,7 +112,7 @@ export default async function LandingPage() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: "radial-gradient(rgba(255,255,255,0.055) 1px, transparent 1px)",
+            backgroundImage: "radial-gradient(rgba(255,255,255,0.11) 1.5px, transparent 1.5px)",
             backgroundSize: "28px 28px",
           }}
         />
@@ -165,7 +165,7 @@ export default async function LandingPage() {
             <span className="text-xs font-medium text-gray-300 mr-2 shrink-0">Utforsk:</span>
             {[
               { href: "/kurs", label: "Kurs" },
-              { href: "/nyheter", label: "AI-nyheter" },
+              { href: "/nyheter", label: "Nyheter innen AI" },
               { href: "/guider", label: "Guider" },
               { href: "/veiledninger", label: "Veiledninger" },
               { href: "/sammenligninger", label: "Sammenligninger" },
@@ -208,8 +208,16 @@ export default async function LandingPage() {
       )}
 
       {/* Pricing — dark editorial */}
-      <section className="py-20 bg-gray-950">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="relative overflow-hidden py-20 bg-gray-950">
+        {/* Dot grid texture */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "radial-gradient(rgba(255,255,255,0.11) 1.5px, transparent 1.5px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24 items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-violet-400">Priser</p>
@@ -372,8 +380,16 @@ export default async function LandingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#080808]">
-        <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
+      <section className="relative overflow-hidden py-20 bg-[#080808]">
+        {/* Dot grid texture */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "radial-gradient(rgba(255,255,255,0.11) 1.5px, transparent 1.5px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+        <div className="relative mx-auto max-w-3xl px-6 text-center lg:px-8">
           <h2 className="text-4xl font-bold text-white tracking-tight">Klar til å starte?</h2>
           <p className="mt-4 text-lg text-white/40">
             Bli med nordmenn som lærer AI på AIvett.

@@ -20,7 +20,7 @@ const plans = [
     featured: false,
     features: [
       "Gratis kurs",
-      "AI-nyheter og artikler",
+      "Nyheter innen AI og artikler",
       "Guider og veiledninger",
       "Annonser vises",
     ],
@@ -121,13 +121,13 @@ export default function PricingPage() {
                 key={plan.name}
                 className={`rounded-2xl p-8 ${
                   plan.featured
-                    ? "bg-gray-950 text-white ring-2 ring-blue-600 scale-105"
+                    ? "bg-gray-950 text-white ring-2 ring-violet-600 scale-105"
                     : "bg-white border border-gray-200"
                 }`}
               >
                 {plan.featured && (
                   <div className="mb-4">
-                    <span className="rounded-full bg-blue-600 px-3 py-1 text-xs font-semibold text-white">
+                    <span className="rounded-full bg-violet-600 px-3 py-1 text-xs font-semibold text-white">
                       Mest populær
                     </span>
                   </div>
@@ -151,7 +151,7 @@ export default function PricingPage() {
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
                       <CheckIcon
-                        className={`size-5 shrink-0 ${plan.featured ? "text-blue-400" : "text-blue-600"}`}
+                        className={`size-5 shrink-0 ${plan.featured ? "text-violet-400" : "text-violet-600"}`}
                       />
                       <span className={`text-sm ${plan.featured ? "text-gray-300" : "text-gray-600"}`}>
                         {feature}
@@ -187,7 +187,7 @@ export default function PricingPage() {
 
           <p className="mt-8 text-center text-sm text-gray-500">
             Enkelt kurs: 499–999 kr med 1 års tilgang.{" "}
-            <Link href="/kurs" className="text-blue-600 hover:underline">
+            <Link href="/kurs" className="text-violet-600 hover:underline">
               Se alle kurs
             </Link>
           </p>

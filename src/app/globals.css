@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
   --font-sans: var(--font-space-grotesk);
@@ -22,20 +23,101 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* MDX content styles */
+/* Article prose overrides */
+.prose-aivett {
+  --tw-prose-body: #374151;
+  --tw-prose-headings: #0a0a0a;
+  --tw-prose-links: #6d28d9;
+  --tw-prose-bold: #0a0a0a;
+  --tw-prose-quotes: #374151;
+  --tw-prose-quote-borders: #6d28d9;
+  --tw-prose-code: #6d28d9;
+  --tw-prose-pre-bg: #1e1b4b;
+}
+
 .prose-aivett h1,
 .prose-aivett h2,
-.prose-aivett h3 {
-  font-weight: 600;
+.prose-aivett h3,
+.prose-aivett h4 {
+  font-weight: 700;
   letter-spacing: -0.02em;
+}
+
+.prose-aivett h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.375rem;
+}
+
+.prose-aivett h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.prose-aivett p {
+  line-height: 1.8;
+  font-size: 1.0625rem;
+}
+
+.prose-aivett a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #c4b5fd;
+  font-weight: 500;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.prose-aivett a:hover {
+  color: #5b21b6;
+  text-decoration-color: #6d28d9;
+}
+
+.prose-aivett blockquote {
+  border-left: 3px solid #6d28d9;
+  background: #f5f3ff;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.75rem 1.25rem;
+  font-style: normal;
+  color: #4b5563;
+}
+
+.prose-aivett blockquote p {
+  margin: 0;
 }
 
 .prose-aivett pre {
   border-radius: 0.75rem;
   overflow-x: auto;
+  background: #1e1b4b;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.875rem;
 }
 
-.prose-aivett code {
-  font-size: 0.9em;
+.prose-aivett :not(pre) > code {
+  background: #f5f3ff;
+  color: #6d28d9;
+  border-radius: 0.3rem;
+  padding: 0.15em 0.4em;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.prose-aivett hr {
+  border-color: #e5e7eb;
+  margin: 2.5rem 0;
+}
+
+.prose-aivett ul > li::marker {
+  color: #6d28d9;
+}
+
+.prose-aivett ol > li::marker {
+  color: #6d28d9;
+  font-weight: 600;
+}
+
+.prose-aivett img {
+  border-radius: 0.75rem;
 }
 

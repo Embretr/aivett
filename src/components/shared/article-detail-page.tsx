@@ -49,8 +49,9 @@ export async function ArticleDetailPage({ slug, category }: ArticleDetailPagePro
         }}
       />
 
-      <div className="py-12">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+      {/* Article header */}
+      <div className="border-b border-gray-100 bg-white pb-10 pt-10">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <Breadcrumbs
             items={[
               { label: config.breadcrumb, href: `/${config.path}` },
@@ -58,35 +59,53 @@ export async function ArticleDetailPage({ slug, category }: ArticleDetailPagePro
             ]}
           />
 
-          <div className="mt-8">
-            <div className="flex items-center gap-3 mb-4">
-              <Badge variant={config.variant}>{config.label}</Badge>
-              {article.publishedAt && (
-                <time className="text-sm text-gray-400">{formatDate(article.publishedAt)}</time>
-              )}
-            </div>
-            <h1 className="text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl leading-tight">
-              {article.title}
-            </h1>
-            <p className="mt-4 text-lg text-gray-500 leading-relaxed">{article.excerpt}</p>
-            <div className="mt-4 flex items-center gap-2 text-sm text-gray-400">
-              <span>{article.author}</span>
-              {article.readingTime && (
-                <>
-                  <span>·</span>
-                  <span>{article.readingTime} min lesing</span>
-                </>
-              )}
-            </div>
+          <div className="mt-6 flex items-center gap-3">
+            <Badge variant={config.variant}>{config.label}</Badge>
+            {article.publishedAt && (
+              <time className="text-sm text-gray-400">{formatDate(article.publishedAt)}</time>
+            )}
+            {article.readingTime && (
+              <span className="text-sm text-gray-400">{article.readingTime} min lesing</span>
+            )}
           </div>
 
-          <AdSlot slot={`${config.path}-article-top`} format="rectangle" className="my-8" />
+          <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl lg:text-5xl leading-[1.15]">
+            {article.title}
+          </h1>
 
-          <div className="prose-aivett prose prose-gray max-w-none mt-8">
+          <p className="mt-5 text-lg text-gray-500 leading-relaxed">
+            {article.excerpt}
+          </p>
+
+          <div className="mt-6 flex items-center gap-3">
+            <div className="flex size-8 items-center justify-center rounded-full bg-violet-100 text-xs font-semibold text-violet-700">
+              {article.author.charAt(0).toUpperCase()}
+            </div>
+            <span className="text-sm font-medium text-gray-700">{article.author}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Article body */}
+      <div className="py-12">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <AdSlot slot={`${config.path}-article-top`} format="rectangle" className="mb-10" />
+
+          <div className="prose prose-aivett max-w-none">
             <MDXRemote source={article.content} />
           </div>
 
-          <AdSlot slot={`${config.path}-article-bottom`} format="horizontal" className="mt-8" />
+          <AdSlot slot={`${config.path}-article-bottom`} format="horizontal" className="mt-12" />
+
+          {/* Back link */}
+          <div className="mt-12 border-t border-gray-100 pt-8">
+            <a
+              href={`/${config.path}`}
+              className="text-sm font-medium text-violet-700 hover:text-violet-600 hover:underline"
+            >
+              &larr; Tilbake til {config.breadcrumb.toLowerCase()}
+            </a>
+          </div>
         </div>
       </div>
     </>

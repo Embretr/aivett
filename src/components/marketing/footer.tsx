@@ -9,7 +9,7 @@ const footerLinks = {
     { href: "/sammenligninger", label: "Sammenligninger" },
   ],
   Innhold: [
-    { href: "/nyheter", label: "AI-nyheter" },
+    { href: "/nyheter", label: "Nyheter innen AI" },
     { href: "/priser", label: "Priser" },
     { href: "/om", label: "Om AIvett" },
   ],
