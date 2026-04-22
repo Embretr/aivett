@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   description:
     "Norges ledende plattform for AI-læring. Kurs, guider, nyheter og sammenligninger om kunstig intelligens på norsk.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "https://aivett.no"),
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/icon.svg",
+  },
   openGraph: {
     siteName: "AIvett",
     locale: "nb_NO",
