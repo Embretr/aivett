@@ -74,18 +74,18 @@ npm run test:e2e:ui         # Interactive Playwright UI
 
 ## Deploy Configuration (configured by /setup-deploy)
 - Platform: Railway
-- Production URL: https://aivett-web.up.railway.app
+- Production URL: https://aivett.no
 - Deploy workflow: `railway up --service aivett-web` or GitHub autodeploy (configure in Railway dashboard)
 - Deploy status command: `railway status`
 - Merge method: squash
 - Project type: web app
-- Post-deploy health check: https://aivett-web.up.railway.app
+- Post-deploy health check: https://aivett.no
 
 ### Custom deploy hooks
 - Pre-merge: `npm run build` (SKIP_ENV_VALIDATION=1)
 - Deploy trigger: `railway up --service aivett-web --detach`
 - Deploy status: `railway logs --service aivett-web`
-- Health check: https://aivett-web.up.railway.app
+- Health check: https://aivett.no
 
 ### Railway project details
 - Project ID: 382c4d12-f3d5-4430-9f1b-443685006df8
