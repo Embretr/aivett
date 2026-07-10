@@ -5426,13 +5426,2377 @@ For de aller fleste norske brukere og bedrifter er svaret: bruk de internasjonal
   },
 ]
 
+const tutorialArticles = [
+  {
+    slug: "kom-i-gang-med-chatgpt",
+    title: "Sett opp ChatGPT-konto og kom i gang på 10 minutter",
+    excerpt: "En komplett nybegynnerguide til å opprette ChatGPT-konto, velge riktig plan og sende din første melding.",
+    content: `## Hva er ChatGPT og hvorfor bør du bruke det?
+
+ChatGPT er en AI-assistent laget av OpenAI som kan hjelpe deg med alt fra skriving og research til koding og problemløsing. Millioner av mennesker bruker det daglig, og det er en av de mest nyttige verktøyene du kan lære i 2025.
+
+Denne veiledningen tar deg gjennom alt fra kontooppsett til din første nyttige samtale.
+
+## Steg 1: Opprett konto på chat.openai.com
+
+1. Gå til **chat.openai.com** i nettleseren din
+2. Klikk på **Sign up**
+3. Velg registreringsmetode:
+   - E-post og passord
+   - Fortsett med Google
+   - Fortsett med Microsoft
+4. Bekreft e-postadressen din via lenken som sendes til innboksen din
+5. Fullfør profilen med navn og fødselsdato
+
+Du er nå inne på gratisversjonen av ChatGPT.
+
+## Steg 2: Forstå de forskjellige planene
+
+ChatGPT tilbys i flere varianter:
+
+**Gratis (GPT-4o mini)**
+- Tilgang til en raskere, lettere modell
+- Begrenset tilgang til GPT-4o
+- Ingen tilgang til avanserte funksjoner som filanalyse og bildegenerering
+
+**ChatGPT Plus (20 USD/mnd)**
+- Full tilgang til GPT-4o
+- Tilgang til o1 og o3-mini for avansert resonnering
+- Bildegenerering med DALL-E 3
+- Last opp filer, bilder og dokumenter
+- Tilgang til Custom GPTs
+
+For de fleste er gratisplanen et godt utgangspunkt. Oppgrader til Plus når du merker at du treffer grensene.
+
+## Steg 3: Lær grensesnittet
+
+Når du logger inn ser du:
+
+- **Venstre sidefelt**: Samtalehistorikk og nye chatter
+- **Midten**: Samtalevinduet
+- **Nederst**: Tekstfeltet der du skriver meldinger
+- **Øverst til høyre**: Kontoinnstillinger
+
+Klikk **New chat** for å starte en ny samtale. Alle gamle samtaler lagres automatisk i venstremenyen.
+
+## Steg 4: Send din første melding
+
+Klikk i tekstfeltet nederst og skriv en melding. Her er noen gode startsteder:
+
+\`\`\`
+Forklar hva kunstig intelligens er med enkle ord,
+som om jeg er 12 år gammel.
+\`\`\`
+
+\`\`\`
+Jeg skal lage en norsk middag til 4 personer.
+Foreslå en oppskrift med ingredienser jeg sannsynligvis
+allerede har hjemme.
+\`\`\`
+
+Trykk Enter eller klikk send-knappen. ChatGPT svarer vanligvis innen sekunder.
+
+## Steg 5: Lær å stille bedre spørsmål
+
+Nøkkelen til gode svar er spesifikke spørsmål:
+
+**Dårlig:** "Hjelp meg med en e-post"
+
+**Bra:** "Skriv en profesjonell e-post til en leverandør der jeg forklarer at vi må utsette betalingen med 14 dager på grunn av likviditetsproblemer. Tonen skal være høflig men bestemt."
+
+Jo mer kontekst du gir, jo bedre svar får du.
+
+## Steg 6: Bruk samtalehistorikk smart
+
+ChatGPT husker alt innenfor én samtale. Du kan:
+- Følge opp med "Kan du gjøre det kortere?"
+- Be om endringer: "Gjør tonen mer uformell"
+- Stille oppfølgingsspørsmål uten å gjenta kontekst
+
+Start en ny chat for et nytt tema — da unngår du at gammel kontekst påvirker svarene.
+
+## Tips for daglig bruk
+
+- **Lagre nyttige samtaler**: Klikk de tre prikkene ved en samtale og gi den et beskrivende navn
+- **Del samtaler**: Klikk "Share" for å sende en samtale til andre
+- **Bruk stemme**: På mobil kan du diktere i stedet for å skrive
+- **Prøv GPT-4o med bilde**: Last opp et bilde og still spørsmål om det
+
+## Vanlige feil nybegynnere gjør
+
+1. **Stiller for vage spørsmål** — vær spesifikk om hva du vil ha
+2. **Aksepterer første svar uten å følge opp** — be om forbedringer
+3. **Bruker det ikke konsekvent** — ChatGPT blir mer nyttig jo mer du bruker det
+4. **Glemmer å verifisere fakta** — ChatGPT kan ta feil, særlig på datoer og tall
+
+Du er nå klar til å bruke ChatGPT produktivt. Eksperimenter gjerne — jo mer du bruker det, jo raskere lærer du hva det kan gjøre for deg.`,
+    readingTime: 5,
+  },
+  {
+    slug: "chatgpt-custom-instructions-guide",
+    title: "Slik bruker du ChatGPT Custom Instructions",
+    excerpt: "Lær å sette opp Custom Instructions i ChatGPT slik at du slipper å gjenta deg selv og alltid får svar tilpasset deg.",
+    content: `## Hva er Custom Instructions?
+
+Custom Instructions er en funksjon i ChatGPT som lar deg fortelle modellen hvem du er og hvordan du vil at den skal svare — én gang, for alle fremtidige samtaler. I stedet for å begynne hver chat med "jeg er en norsk lærer og vil ha enkle svar", legger du dette inn én gang og ChatGPT husker det.
+
+Funksjonen er tilgjengelig for alle brukere, inkludert gratisplanen.
+
+## Steg 1: Finn Custom Instructions
+
+1. Logg inn på **chat.openai.com**
+2. Klikk på **profilbildet** ditt øverst til høyre
+3. Velg **Customize ChatGPT**
+4. Du ser to tekstfelter — her er vi
+
+## Steg 2: Forstå de to feltene
+
+**Felt 1: "What would you like ChatGPT to know about you?"**
+Her legger du inn bakgrunnsinformasjon om deg selv:
+- Yrke og fagområde
+- Kontekst for hvorfor du bruker ChatGPT
+- Ditt kompetansenivå på relevante temaer
+- Språkpreferanse
+
+**Felt 2: "How would you like ChatGPT to respond?"**
+Her definerer du responsstil og format:
+- Lengde på svar
+- Formelt eller uformelt språk
+- Om det skal bruke punktlister eller prosa
+- Om det skal stille oppfølgingsspørsmål
+
+## Steg 3: Skriv dine egne instruksjoner
+
+Her er et eksempel for en norsk markedsføringsprofesjonell:
+
+**Felt 1 — Om meg:**
+\`\`\`
+Jeg er markedssjef i en norsk SMB med 25 ansatte.
+Jeg jobber primært med digital markedsføring,
+innholdsproduksjon og sosiale medier.
+Jeg har god kunnskap om markedsføring, men er
+ny med AI-verktøy. Jeg ønsker svar på norsk.
+\`\`\`
+
+**Felt 2 — Svarformat:**
+\`\`\`
+Svar alltid på norsk bokmål med mindre jeg spesifikt
+ber om et annet språk. Hold svarene konsise og
+praktisk orienterte. Bruk punktlister der det
+er naturlig. Unngå unødvendig fagsjargong.
+Gi alltid konkrete eksempler der det er mulig.
+\`\`\`
+
+## Steg 4: Eksempler for forskjellige roller
+
+**For utviklere:**
+\`\`\`
+Felt 1: Jeg er backend-utvikler med 5 års erfaring i Python og TypeScript.
+Jeg jobber med distribuerte systemer og sky-infrastruktur.
+
+Felt 2: Svar med kodeeksempler der relevant. Anta at jeg kjenner
+grunnleggende konsepter — ikke forklar det helt elementære.
+Vis gjerne alternative tilnærminger med fordeler og ulemper.
+\`\`\`
+
+**For studenter:**
+\`\`\`
+Felt 1: Jeg er masterstudent i økonomi ved NTNU.
+Jeg skriver masteroppgave om bærekraftig finans.
+
+Felt 2: Forklar konsepter grundig, men bruk ikke for komplisert
+akademisk språk. Når jeg ber om hjelp til oppgaven,
+hjelp meg å tenke selv — ikke skriv ferdig tekst for meg
+med mindre jeg eksplisitt ber om det.
+\`\`\`
+
+## Steg 5: Slik aktiverer og deaktiverer du dem
+
+Instruksjonene gjelder for alle nye samtaler automatisk. Du kan:
+
+1. **Midlertidig deaktivere**: I et samtalevindu, klikk på modellnavnet øverst og slå av "Custom instructions" for den spesifikke chatten
+2. **Redigere**: Gå tilbake til Customize ChatGPT og oppdater feltene når som helst
+3. **Slette**: Tøm begge feltene og lagre
+
+## Tips for effektive instruksjoner
+
+- **Vær spesifikk om språk**: Skriv eksplisitt "Svar alltid på norsk" hvis du vil det
+- **Ikke overdriv lengden**: 100–200 ord per felt er nok
+- **Test og juster**: Prøv et par samtaler og se om svarene matcher forventningene
+- **Skill mellom kontekst og stil**: Felt 1 er "hvem er jeg", felt 2 er "hvordan vil jeg ha det"
+
+## Hva Custom Instructions ikke kan gjøre
+
+- De kan ikke gi ChatGPT tilgang til internett eller sanntidsdata
+- De er ikke en garanti — ChatGPT kan fremdeles avvike fra instruksjonene
+- De gjelder ikke for eksisterende samtaler, kun nye
+
+Når Custom Instructions er satt opp riktig, sparer du tid på hver eneste samtale og får mer relevante og nyttige svar fra dag én.`,
+    readingTime: 5,
+  },
+  {
+    slug: "github-copilot-vs-code-oppsett",
+    title: "Sett opp GitHub Copilot i VS Code fra scratch",
+    excerpt: "Komplett guide til å installere og konfigurere GitHub Copilot i Visual Studio Code, inkludert tips for å få mest mulig ut av det.",
+    content: `## Hva er GitHub Copilot?
+
+GitHub Copilot er et AI-kodinghjelp-verktøy laget av GitHub og OpenAI. Det integreres direkte i kode-editoren din og foreslår kode, funksjoner og hele blokker mens du skriver. Det er som å ha en erfaren utvikler som sitter ved siden av deg og fullfører setningene dine.
+
+Copilot koster 10 USD/mnd for privatpersoner, men er gratis for verifiserte studenter og open source-vedlikeholdere.
+
+## Steg 1: Skaff en GitHub-konto og aktiver Copilot
+
+1. Gå til **github.com** og opprett en konto hvis du ikke har en
+2. Naviger til **github.com/features/copilot**
+3. Klikk **Start a free trial** (30 dagers gratis)
+4. Velg **Individual plan** for personlig bruk
+5. Legg inn betalingsinformasjon (trekkes ikke i prøveperioden)
+6. Aktiveringen tar noen minutter
+
+## Steg 2: Installer VS Code
+
+Hvis du ikke allerede har VS Code:
+1. Gå til **code.visualstudio.com**
+2. Last ned riktig versjon for ditt operativsystem (Windows/macOS/Linux)
+3. Installer som normalt
+
+## Steg 3: Installer GitHub Copilot-utvidelsen
+
+1. Åpne VS Code
+2. Klikk på **Extensions**-ikonet i venstremenyen (eller trykk \`Ctrl+Shift+X\` / \`Cmd+Shift+X\`)
+3. Søk etter **GitHub Copilot**
+4. Klikk **Install** på utvidelsen fra GitHub
+5. Du bør også installere **GitHub Copilot Chat** — søk og installer denne også
+
+## Steg 4: Logg inn med GitHub-kontoen din
+
+1. Etter installasjon vil VS Code be deg logge inn
+2. Klikk **Sign in to GitHub** i varselet som dukker opp
+3. Nettleseren åpner og ber deg autorisere VS Code
+4. Klikk **Authorize GitHub** og gå tilbake til VS Code
+5. Du ser en liten Copilot-ikon nederst til høyre i VS Code når det er aktivert
+
+## Steg 5: Test at det fungerer
+
+Opprett en ny fil med en passende filtype, for eksempel \`test.py\`:
+
+\`\`\`python
+# En funksjon som beregner fibonacci-tall
+def fibonacci(
+\`\`\`
+
+Copilot skal nå foreslå en fullstendig implementasjon. Du ser forslaget i grå tekst. Trykk **Tab** for å akseptere, eller **Esc** for å avvise.
+
+## Steg 6: Bruk Copilot Chat
+
+Copilot Chat er en samtalebasert AI-assistent direkte i editoren:
+
+1. Trykk \`Ctrl+Shift+I\` (Windows/Linux) eller \`Cmd+Shift+I\` (macOS)
+2. Chat-panelet åpner seg til høyre
+3. Still spørsmål om koden din, be om forklaringer eller hjelp til debugging
+
+Nyttige kommandoer i Chat:
+- \`/explain\` — Forklar markert kode
+- \`/fix\` — Fiks en bug i markert kode
+- \`/tests\` — Generer enhetstester
+- \`/doc\` — Legg til dokumentasjon
+
+## Steg 7: Konfigurer innstillingene
+
+Åpne innstillinger med \`Ctrl+,\` og søk etter "copilot":
+
+**Nyttige innstillinger:**
+- \`github.copilot.enable\`: Slå Copilot av/på per filtype
+- \`editor.inlineSuggest.enabled\`: Kontroller inline-forslag
+- \`github.copilot.editor.enableAutoCompletions\`: Automatiske forslag
+
+Du kan deaktivere Copilot for spesifikke filtyper (f.eks. \`.env\` og \`.json\`) for å unngå uønskede forslag i sensitiv konfigurasjon.
+
+## Tips for å få bedre forslag
+
+1. **Skriv gode kommentarer**: \`# Hent alle brukere fra databasen der status er aktiv\` gir mye bedre forslag enn ingen kommentar
+2. **Navngi variabler og funksjoner beskrivende**: \`getUsersByActiveStatus()\` er bedre enn \`getUsers()\`
+3. **Ha relevant kontekst åpen**: Copilot ser andre åpne filer og bruker dem som kontekst
+4. **Bruk Copilot Edits**: Marker en funksjon, trykk \`Ctrl+I\` og be om endringer direkte
+
+## Vanlige problemer og løsninger
+
+**Copilot viser ingen forslag**
+- Sjekk at ikonet nederst til høyre ikke er rødt (betyr deaktivert for denne filtypen)
+- Verifiser at du er logget inn: Klikk Copilot-ikonet og se etter kontostatus
+
+**Forslagene er irrelevante**
+- Gi mer kontekst via kommentarer
+- Sørg for at relaterte filer er åpne i editoren
+
+**Treg respons**
+- Dette er normalt ved høy serverbelastning
+- Forslagene kommer vanligvis innen 1-3 sekunder
+
+GitHub Copilot er et verktøy som blir bedre jo mer du bruker det. Ta deg tid til å lære snarveiene og bygg det inn i flyten din — det vil spare deg for mye tid.`,
+    readingTime: 6,
+  },
+  {
+    slug: "kom-i-gang-med-claude",
+    title: "Kom i gang med Claude.ai — din første samtale",
+    excerpt: "Slik oppretter du konto hos Anthropic, forstår hva som gjør Claude annerledes, og starter din første produktive samtale.",
+    content: `## Hva er Claude?
+
+Claude er en AI-assistent laget av Anthropic, et AI-sikkerhetsselskap grunnlagt i 2021. Claude er kjent for å være gjennomtenkt, ærlig og god på lange, komplekse oppgaver. Den er særlig sterk på tekstanalyse, skriving, koding og samtaler som krever nyansert forståelse.
+
+I 2025 er Claude 3.5 Sonnet og Claude 3 Opus blant de mest kapable AI-modellene tilgjengelig for forbrukere.
+
+## Steg 1: Opprett konto på claude.ai
+
+1. Gå til **claude.ai**
+2. Klikk **Sign up**
+3. Registrer deg med e-post, Google eller Apple
+4. Bekreft e-posten din
+5. Velg bruksområde (valgfritt — du kan hoppe over dette)
+
+Gratisplanen gir deg tilgang til Claude med daglige bruksgrenser. Claude Pro til 20 USD/mnd gir ubegrenset tilgang til Sonnet og tilgang til Opus.
+
+## Steg 2: Forstå hva som gjør Claude annerledes
+
+Før du begynner er det nyttig å vite hva Claude er særlig god på:
+
+**Sterk på:**
+- Lange dokumenter og tekstanalyse (inntil 200 000 tokens kontekstvindu)
+- Nyansert og balansert resonnering
+- Kodeskriving og debugging
+- Kreativ skriving med konsistent stil
+- Ærlighet — Claude sier ifra når den er usikker
+
+**Svakere på:**
+- Sanntidsinformasjon (ingen internettilgang på gratis)
+- Bildebehandling på gratisplanen
+- Matematikk sammenlignet med spesialiserte verktøy
+
+## Steg 3: Lær grensesnittet
+
+Claude.ai er enklere enn mange andre AI-verktøy:
+
+- **Venstre sidefelt**: Samtalehistorikk
+- **Midten**: Samtalevindu
+- **Modellvelger**: Øverst — bytt mellom Haiku (rask), Sonnet (balansert) og Opus (mest kapabel)
+- **Opplastningsknapp**: Last opp filer og bilder i samtalen
+
+## Steg 4: Din første samtale
+
+Start med noe konkret. Claude er god på å analysere tekst du leverer:
+
+\`\`\`
+Jeg skal jobbe med et prosjekt der jeg må skrive
+en rapport om bærekraft for styret i selskapet mitt.
+Rapporten skal dekke: 1) Nåværende CO2-avtrykk,
+2) Mål for 2030, 3) Tiltaksplan.
+
+Kan du hjelpe meg med en innholdsfortegnelse og
+forslag til struktur for en 10-siders rapport?
+\`\`\`
+
+Claude gir deg en gjennomtenkt respons med begrunnelse for valgene den tar.
+
+## Steg 5: Last opp dokumenter
+
+En av Claudes sterkeste sider er dokumentanalyse:
+
+1. Klikk på binders-ikonet i chatfeltet
+2. Last opp en PDF, Word-fil eller tekstfil
+3. Still spørsmål om innholdet
+
+Eksempel på hva du kan gjøre:
+\`\`\`
+[Last opp en kontrakt]
+Gå gjennom denne kontrakten og fremhev:
+1. Klausuler som er uvanlig gunstige for motparten
+2. Manglende standardbestemmelser
+3. Tidsfrister og forpliktelser
+\`\`\`
+
+## Steg 6: Lær Claudes særegenheter
+
+Claude har noen kjennetegn du bør vite om:
+
+**Claude sier ifra om usikkerhet.** I stedet for å dikte opp svar, vil Claude si "jeg er ikke sikker på dette" eller "du bør verifisere dette". Det er en styrke, ikke en svakhet.
+
+**Claude husker samtalen, ikke deg.** Hver ny chat starter blankt. Claudes minne er innenfor én samtale — ikke på tvers av samtaler (med mindre du bruker Projects-funksjonen).
+
+**Claude er tydelig på grenser.** Noen forespørsler vil Claude avslå. Den forklarer alltid hvorfor og foreslår gjerne alternativer.
+
+## Steg 7: Bruk Projects for langvarig arbeid
+
+Med Claude Pro får du tilgang til Projects — mapper der Claude husker kontekst på tvers av samtaler:
+
+1. Klikk **New project** i venstremenyen
+2. Gi prosjektet et navn og en beskrivelse
+3. Last opp relevante dokumenter til prosjektet
+4. Alle samtaler i prosjektet deler kontekst
+
+Dette er ideelt for langvarige prosjekter som rapportskriving, kodeprosjekter eller research.
+
+## Tips for bedre resultater
+
+- **Gi rollen**: "Du er en erfaren norsk jurist. Vurder følgende kontrakt..."
+- **Spesifiser format**: "Svar i en nummerert liste med maksimalt 5 punkter"
+- **Be om tankeprosessen**: "Forklar resonnementet ditt steg for steg"
+- **Følg opp**: "Dette var bra, men kan du gjøre punkt 3 mer konkret?"
+
+Claude er et verktøy som belønner presise spørsmål. Jo mer kontekst og retning du gir, jo bedre svar får du.`,
+    readingTime: 5,
+  },
+  {
+    slug: "perplexity-ai-research-guide",
+    title: "Slik bruker du Perplexity AI for research",
+    excerpt: "Perplexity AI er en AI-søkemotor med kildehenvisninger. Lær å bruke den for effektiv research, analyse og informasjonsinnhenting.",
+    content: `## Hva er Perplexity AI?
+
+Perplexity AI er en AI-søkemotor som kombinerer kraften til store språkmodeller med sanntidssøk på internett. I motsetning til ChatGPT og Claude har Perplexity alltid internettilgang og viser kildehenvisninger for alt den sier — noe som gjør den spesielt verdifull for research og faktasjekk.
+
+Det gratis nivået er svært brukbart. Pro-versjonen til 20 USD/mnd gir tilgang til mer avanserte modeller og ubegrenset Pro-søk.
+
+## Steg 1: Opprett konto på perplexity.ai
+
+1. Gå til **perplexity.ai**
+2. Klikk **Sign up** øverst til høyre
+3. Registrer deg med e-post eller Google
+4. Du er klar — ingen e-postbekreftelse kreves
+
+Perplexity fungerer faktisk bra uten konto, men konto gir deg samtalehistorikk og Pro-funksjoner.
+
+## Steg 2: Forstå de ulike søkemodusen
+
+Perplexity har flere søkemodi:
+
+**Quick Search (standard)**
+Rask, god for enkle faktaspørsmål og hurtig research.
+
+**Pro Search**
+Grundigere søk med flere sources og bedre analyse. Bruker GPT-4 eller Claude 3.5 Sonnet. Begrenset antall per dag på gratisplan.
+
+**Focus-modi** (klikk på kompassikonet):
+- **All** — Søker over hele internett
+- **Academic** — Fokuserer på vitenskapelige artikler og tidsskrifter
+- **Writing** — Hjelper med skriveoppgaver
+- **YouTube** — Søker i YouTube-videoer
+- **Reddit** — Søker på Reddit-diskusjoner
+- **Social** — Sosiale medier og nyheter
+
+## Steg 3: Gjør ditt første Pro-søk
+
+Klikk på **Pro**-knappen ved siden av søkefeltet, og still et research-spørsmål:
+
+\`\`\`
+Hva er de viktigste teknologiske trendene innen
+fornybar energi i 2025? Inkluder spesifikke selskaper
+og teknologier som leder an.
+\`\`\`
+
+Perplexity vil:
+1. Søke på internett i sanntid
+2. Syntetisere informasjonen
+3. Vise svaret med nummererte kildehenvisninger
+4. Presentere kildelisten under svaret
+
+## Steg 4: Bruk kildehenvisningene aktivt
+
+Kildehenvisninger er Perplexitys killer feature. Slik bruker du dem:
+
+- Klikk på et tall i teksten \`[1]\` for å hoppe til kilden
+- Klikk kildelenken for å lese originalartikkelen
+- Bruk kildelisten for å verifisere påstander
+- Finn kilden med høyest autoritet og les den dypere
+
+For akademisk arbeid: sjekk alltid originalkilden — Perplexity kan misforstå eller forenkle.
+
+## Steg 5: Bruk Spaces for prosjektbasert research
+
+Spaces lar deg lagre research-sesjoner og bygge opp kunnskap over tid:
+
+1. Klikk **Spaces** i venstremenyen
+2. Opprett en ny Space med et navn
+3. Start søk inne i Spacen
+4. All research lagres og kan refereres tilbake til
+
+Du kan også laste opp dokumenter til en Space og stille spørsmål om dem.
+
+## Steg 6: Praktiske bruksscenarier
+
+**Konkurranseanalyse:**
+\`\`\`
+Analyser de tre største konkurrentene til [bedrift]
+i det norske markedet. Inkluder styrker, svakheter
+og nylige strategiske trekk.
+\`\`\`
+
+**Teknologiresearch:**
+\`\`\`
+Hva er forskjellen mellom RAG og fine-tuning
+for tilpasning av språkmodeller? Gi en praktisk
+sammenligning med brukseksempler.
+\`\`\`
+
+**Nyhetsovervåking:**
+\`\`\`
+Hva har skjedd med [emne] de siste 7 dagene?
+\`\`\`
+
+## Steg 7: Kombiner med andre AI-verktøy
+
+Perplexity er best som et første steg i research-prosessen:
+
+1. **Perplexity**: Finn fakta, datoer, aktører, trender
+2. **Claude eller ChatGPT**: Analyser og bearbeid informasjonen
+3. **Notater**: Dokumenter funnene med kildereferanser
+
+## Tips for bedre søk
+
+- **Vær spesifikk om tidsperiode**: "i 2025" eller "siste 6 måneder" gir mer relevante svar
+- **Angi faglig nivå**: "For en ikke-teknisk leder" vs "for en ingeniør"
+- **Bruk oppfølgingsspørsmål**: Perplexity husker kontekst innenfor en samtale
+- **Akademisk modus for forskning**: Gir tilgang til Google Scholar og PubMed
+
+Perplexity er det beste gratis verktøyet for faktabasert research i 2025. Det er ikke en erstatning for dype analyser, men et uunnværlig verktøy for raskt å få oversikt over et tema.`,
+    readingTime: 5,
+  },
+  {
+    slug: "notebooklm-egne-dokumenter",
+    title: "Sett opp og bruk Google NotebookLM med egne dokumenter",
+    excerpt: "NotebookLM lar deg chatte med dine egne dokumenter. Lær å sette det opp, laste opp kilder og stille smarte spørsmål.",
+    content: `## Hva er Google NotebookLM?
+
+NotebookLM er et AI-research-verktøy fra Google som lar deg laste opp dine egne dokumenter og deretter chatte med dem. I stedet for å søke på internett, svarer NotebookLM kun basert på kildene du har lagt inn — og gir alltid kildehenvisning til eksakt hvilken side og avsnitt svaret kommer fra.
+
+Det er gratis og krever bare en Google-konto.
+
+## Steg 1: Åpne NotebookLM
+
+1. Gå til **notebooklm.google.com**
+2. Logg inn med din Google-konto
+3. Klikk **New notebook** for å opprette ditt første notatblokk
+
+## Steg 2: Legg til kilder
+
+Du kan legge til mange typer kilder:
+
+**Støttede formater:**
+- PDF-dokumenter
+- Google Docs
+- Google Slides
+- Nettsider (lim inn URL)
+- YouTube-videoer (lim inn URL)
+- Lydfiler
+
+**Slik legger du til en kilde:**
+1. Klikk **+ Add sources** i venstremenyen
+2. Velg kildetype
+3. Last opp filen eller lim inn URL
+4. NotebookLM prosesserer kilden (tar noen sekunder)
+
+Du kan legge til inntil 50 kilder per notatblokk, og hver kilde kan være opptil 500 000 ord.
+
+## Steg 3: Forstå grensesnittet
+
+Etter å ha lagt til kilder ser du:
+
+- **Venstre sidefelt**: Liste over alle kilder med sammendrag
+- **Midtre panel**: Chat-grensesnittet
+- **Høyre panel**: Notater du kan lage
+
+Klikk på en kilde for å lese et autogenerert sammendrag og se nøkkelspørsmål NotebookLM foreslår.
+
+## Steg 4: Still spørsmål til dokumentene dine
+
+Skriv i chatfeltet og still spørsmål om innholdet:
+
+\`\`\`
+Hva er de viktigste anbefalingene i rapporten?
+\`\`\`
+
+\`\`\`
+Sammenlign perspektivene på klimarisiko
+mellom de tre dokumentene jeg har lastet opp.
+\`\`\`
+
+\`\`\`
+Er det noen motsigelser mellom kildene mine
+om temaet markedsregulering?
+\`\`\`
+
+Svarene vises med sitater og lenker til nøyaktig sted i kildedokumentet.
+
+## Steg 5: Verifiser kildene
+
+Klikk på siteringslenken i svaret for å hoppe direkte til det aktuelle avsnittet i kilden. Dette er NotebookLMs sterkeste egenskap — du kan alltid etterprøve hvert enkelt påstand.
+
+Grønne sitater betyr direkte sitat. Gule betyr parafrasering.
+
+## Steg 6: Bruk de forhåndsgenererte verktøyene
+
+Klikk på en kilde for å se:
+
+- **Suggested questions**: Spørsmål NotebookLM foreslår basert på innholdet
+- **Study guide**: Automatisk generert studieveiledning
+- **Briefing doc**: Et sammenfattet oversiktsdokument
+
+Du kan også velge alle kilder og generere:
+- En FAQ om innholdet
+- En tidslinje av hendelser
+- Et sammendrag av hele notatblokken
+
+## Steg 7: Lag notater
+
+NotebookLM lar deg lagre viktige funn:
+
+1. Merk et svar i chat-panelet
+2. Klikk **Save to note**
+3. Notatet vises i høyre panel
+4. Du kan redigere og bygge videre på det
+
+Notatene dine kan eksporteres til Google Docs.
+
+## Praktiske bruksscenarier
+
+**For studenter:**
+Last opp pensumbøker og forelesningsnotater, og still eksamensrelaterte spørsmål. NotebookLM svarer kun fra kildene dine — du slipper å lure på om AI hallusinerer.
+
+**For jurister og rådgivere:**
+Last opp kontrakter, lover og reguleringer. Still spørsmål som "Hvilke frister gjelder under denne kontrakten?" med kildehenvisning.
+
+**For journalister og analytikere:**
+Last opp rapporter, pressemeldinger og dokumenter. Sammenlign og krysskontroller enkelt.
+
+## Viktige begrensninger
+
+- NotebookLM sier eksplisitt "Jeg kan ikke svare på dette basert på kildene dine" hvis spørsmålet ikke dekkes av dine dokumenter
+- Det er ikke tilgang til internett — kun dine opplastede kilder
+- Ikke egnet for sanntidsinformasjon eller faktasjekk av ekstern informasjon
+
+NotebookLM er det beste verktøyet for å arbeide med store mengder dokumenter, og kildehenvisningsfunksjonen gjør det til et av de mest troverdige AI-verktøyene tilgjengelig.`,
+    readingTime: 5,
+  },
+  {
+    slug: "lag-din-forste-custom-gpt",
+    title: "Slik lager du din første Custom GPT",
+    excerpt: "Custom GPTs lar deg bygge spesialiserte AI-assistenter tilpasset ditt arbeid. Lær å lage din første på under 30 minutter.",
+    content: `## Hva er Custom GPTs?
+
+Custom GPTs er egendefinerte versjoner av ChatGPT som du kan konfigurere med spesifikke instruksjoner, kunnskap og verktøy. Du kan lage en GPT som alltid svarer som en bestemt ekspert, som kun bruker informasjon fra dine egne dokumenter, eller som kan utføre spesielle oppgaver som å generere bilder i et bestemt format.
+
+Custom GPTs krever ChatGPT Plus (20 USD/mnd).
+
+## Steg 1: Åpne GPT Builder
+
+1. Logg inn på **chat.openai.com**
+2. Klikk på **Explore GPTs** i venstremenyen
+3. Klikk **Create** øverst til høyre
+4. Du ser GPT Builder — et verktøy for å lage din GPT
+
+## Steg 2: Beskriv din GPT til GPT Builder
+
+GPT Builder er selv en AI som hjelper deg å lage GPT-en. Fortell den hva du vil:
+
+\`\`\`
+Jeg vil lage en GPT som hjelper norske
+markedsførere med å skrive effektive
+annonsetekster for Facebook og Instagram.
+Den skal alltid skrive på norsk, spørre
+om målgruppe og produkt, og levere 3 varianter.
+\`\`\`
+
+GPT Builder vil stille deg oppfølgingsspørsmål og bygge instruksjonene automatisk.
+
+## Steg 3: Rediger innstillingene manuelt
+
+Klikk på **Configure**-fanen for mer kontroll:
+
+**Name**: Gi GPT-en et beskrivende navn
+
+**Description**: Kort forklaring av hva den gjør (vises i butikken)
+
+**Instructions**: Her skriver du de detaljerte instruksjonene (opp til 8000 tegn)
+
+Eksempel på instruksjoner for en markedsførings-GPT:
+\`\`\`
+Du er en ekspert på digital markedsføring med
+10 års erfaring. Du spesialiserer deg på norsk
+B2C-markedsføring for sosiale medier.
+
+Når brukeren ber om annonsetekst, skal du alltid:
+1. Spørre om produktet/tjenesten
+2. Spørre om målgruppen (alder, interesser)
+3. Spørre om budsjett og platform (Facebook/Instagram/TikTok)
+4. Levere 3 varianter med ulik tilnærming
+5. Forklare tanken bak hver variant
+
+Svar alltid på norsk. Bruk et moderne,
+engasjerende språk. Unngå klisjeer.
+\`\`\`
+
+## Steg 4: Last opp kunnskapskilder
+
+Under **Knowledge**:
+1. Klikk **Upload files**
+2. Last opp relevante dokumenter (PDF, Word, tekstfiler)
+3. GPT-en vil bruke disse som referanser i svarene
+
+Eksempler på hva du kan laste opp:
+- Merkevareprofil og retningslinjer
+- Produktkatalog
+- FAQ-dokumenter
+- Eksempel på tidligere gode svar
+
+## Steg 5: Aktiver nyttige verktøy
+
+Under **Capabilities**:
+
+- **Web Search**: La GPT-en søke på internett
+- **DALL-E Image Generation**: La GPT-en generere bilder
+- **Code Interpreter**: La GPT-en kjøre kode og analysere filer
+
+For en markedsførings-GPT er Web Search nyttig for å sjekke aktuelle trender.
+
+## Steg 6: Test GPT-en
+
+I høyre panel ser du en forhåndsvisning av GPT-en:
+
+1. Test med realistiske spørsmål
+2. Sjekk at instruksjonene overholdes
+3. Se om den stiller de riktige oppfølgingsspørsmålene
+
+Klikk tilbake til Configure og juster instruksjonene basert på hva du ser.
+
+## Steg 7: Lagre og del
+
+Klikk **Save** og velg synlighetsinnstilling:
+
+- **Only me**: Kun du kan bruke den
+- **Only people with a link**: Del med spesifikke personer
+- **Public**: Alle kan finne den i GPT-butikken
+
+For intern bruk i en bedrift: velg "only people with a link" og del lenken med kolleger.
+
+## Nyttige Custom GPT-ideer
+
+**For HR:**
+En GPT som hjelper med å skrive stillingsannonser basert på jobbeskrivelse og bedriftskultur.
+
+**For utviklere:**
+En GPT med din kodestil og arkitekturprinsipper, som alltid genererer kode konsistent med eksisterende kodebase.
+
+**For kundestøtte:**
+En GPT trent på dine produktdokumenter og vanlige spørsmål, som gir konsistente svar.
+
+Custom GPTs er et av de kraftigste verktøyene for å automatisere og standardisere AI-arbeid i en organisasjon.`,
+    readingTime: 6,
+  },
+  {
+    slug: "midjourney-nettleser-oppsett",
+    title: "Midjourney i nettleseren: komplett oppsett",
+    excerpt: "Midjourney har lansert et nettlesergrensesnitt. Lær å sette opp konto, generere bilder og bruke de viktigste funksjonene.",
+    content: `## Hva er Midjourney?
+
+Midjourney er et av de mest populære AI-bildegeneratorverktøyene i verden, kjent for kunstnerisk kvalitet og estetikk. Tidligere krevde det Discord — nå har Midjourney sitt eget nettlesergrensesnitt på midjourney.com.
+
+Midjourney koster fra 10 USD/mnd. Det finnes ingen gratis plan, men du kan starte en prøveperiode.
+
+## Steg 1: Opprett konto
+
+1. Gå til **midjourney.com**
+2. Klikk **Sign In** øverst til høyre
+3. Logg inn med Discord-konto (Midjourney bruker fortsatt Discord for autentisering) eller e-post
+4. Velg abonnementsplan:
+   - **Basic (10 USD/mnd)**: 200 bilder/mnd
+   - **Standard (30 USD/mnd)**: Ubegrenset avslappet modus
+   - **Pro (60 USD/mnd)**: Rask GPU, privat modus
+
+## Steg 2: Lær grensesnittet
+
+Etter innlogging ser du:
+
+- **Explore**: Galleri med andres bilder for inspirasjon
+- **Create**: Ditt arbeidsområde for å generere bilder
+- **Organize**: Administrer og organiser bildene dine
+
+Klikk **Create** for å komme i gang.
+
+## Steg 3: Generer ditt første bilde
+
+I feltet øverst skriver du en beskrivelse (prompt):
+
+\`\`\`
+A serene Norwegian fjord at sunset, dramatic clouds,
+golden light reflecting on calm water, photorealistic,
+8K, wide angle
+\`\`\`
+
+Midjourney genererer alltid 4 bilder av gangen. Etter noen sekunder ser du resultatet.
+
+## Steg 4: Bruk bildekontrollene
+
+Under hvert sett med bilder:
+
+- **U1-U4**: Upscale ett av de 4 bildene til høy oppløsning
+- **V1-V4**: Lag varianter av ett av de 4 bildene
+- **Re-run**: Generer 4 nye bilder med samme prompt
+
+Etter upscaling kan du:
+- **Vary (Subtle)**: Små variasjoner
+- **Vary (Strong)**: Store variasjoner
+- **Zoom Out**: Utvid bildet med mer omgivelser
+- **Pan**: Utvid bildet i én retning
+
+## Steg 5: Lær de viktigste parameterne
+
+Legg til parametere på slutten av prompten for mer kontroll:
+
+**Sideforhold:**
+\`\`\`
+landscape photo --ar 16:9
+portrait photo --ar 2:3
+square logo --ar 1:1
+\`\`\`
+
+**Stil og kvalitet:**
+\`\`\`
+oil painting style --style raw
+photorealistic --v 6
+anime style --niji 6
+\`\`\`
+
+**Ekskluder elementer:**
+\`\`\`
+forest landscape --no people, cars
+\`\`\`
+
+## Steg 6: Bruk Style Reference (sref)
+
+Style Reference lar deg matche stilen fra et eksisterende bilde:
+
+1. Last opp et bilde til Midjourney
+2. Bruk URL-en i prompten:
+\`\`\`
+Norwegian cabin in winter --sref [bilde-URL]
+\`\`\`
+
+Dette er ekstremt nyttig for å opprettholde konsistent visuell stil på tvers av mange bilder.
+
+## Steg 7: Bruk Image Prompting
+
+Du kan bruke et eksisterende bilde som utgangspunkt:
+
+1. Last opp bildet ved å klikke bildeikonet
+2. Beskriv hva du vil endre eller legge til
+3. Juster vekten med parameteren \`--iw\` (0.5–2.0, der høyere betyr mer tro mot originalbildet)
+
+## Tips for bedre bilder
+
+**Vær spesifikk om stil:**
+\`\`\`
+watercolor illustration, soft colors,
+children's book style
+\`\`\`
+
+**Angi belysning:**
+\`\`\`
+dramatic side lighting, golden hour,
+studio lighting with soft box
+\`\`\`
+
+**Legg til tekniske detaljer:**
+\`\`\`
+shot on Canon 5D, 85mm lens,
+shallow depth of field, f/1.8
+\`\`\`
+
+**Inspirer deg fra andre:**
+Bruk Explore-galleriet for å se hvilke prompts som gir gode resultater, og kopier stilen.
+
+Midjourney er et kraftig verktøy, og det tar tid å lære å skrive gode prompts. Start enkelt og legg til detaljer gradvis til du er fornøyd med resultatet.`,
+    readingTime: 6,
+  },
+  {
+    slug: "chatgpt-analyser-excel",
+    title: "Slik bruker du ChatGPT for å analysere Excel-filer",
+    excerpt: "ChatGPT kan lese og analysere Excel- og CSV-filer direkte. Lær å laste opp data og stille spørsmål for å få innsikt raskt.",
+    content: `## Hva kan ChatGPT gjøre med Excel-filer?
+
+Med ChatGPT Plus kan du laste opp Excel-filer (.xlsx), CSV-filer og andre dataformater direkte i samtalen. ChatGPT kan da analysere innholdet, lage sammendrag, finne trender, generere visualiseringer og til og med skrive formler og Python-kode for videre analyse.
+
+Dette krever ChatGPT Plus (20 USD/mnd) og at "Advanced Data Analysis" er aktivert.
+
+## Steg 1: Aktiver Advanced Data Analysis
+
+1. Logg inn på **chat.openai.com**
+2. Klikk på profilbildet ditt og velg **Settings**
+3. Gå til **Beta features**
+4. Sørg for at **Advanced Data Analysis** er slått på
+
+## Steg 2: Last opp en Excel-fil
+
+1. Start en ny chat
+2. Klikk på binders-ikonet i chatfeltet
+3. Velg filen din (Excel, CSV, eller annet regneark)
+4. Vent til filen er lastet opp (du ser filnavnet over chatfeltet)
+
+## Steg 3: Start med et oversiktsspørsmål
+
+Be ChatGPT om å orientere seg i dataene:
+
+\`\`\`
+Jeg har lastet opp en salgsfil. Kan du:
+1. Fortelle meg hvilke kolonner som finnes
+2. Gi meg et sammendrag av hva slags data dette er
+3. Fortelle meg om det er noen åpenbare problemer
+   med dataene (manglende verdier, feil format osv.)
+\`\`\`
+
+ChatGPT vil utforske filen og gi deg en oversikt.
+
+## Steg 4: Still analytiske spørsmål
+
+Når du har oversikten kan du gå dypere:
+
+**Statistikk:**
+\`\`\`
+Hva er gjennomsnittlig salgsverdi per måned?
+Vis meg månedene sortert fra høyest til lavest.
+\`\`\`
+
+**Filtrering:**
+\`\`\`
+Hvilke kunder har kjøpt for mer enn 50 000 kr
+totalt i løpet av perioden?
+\`\`\`
+
+**Trendanalyse:**
+\`\`\`
+Vis meg utviklingen i salg over tid.
+Er det sesongvariasjoner?
+\`\`\`
+
+## Steg 5: Be om visualiseringer
+
+ChatGPT kan lage grafer og diagrammer:
+
+\`\`\`
+Lag et stolpediagram som viser månedlig salg
+for hvert produkt. Bruk norske månedsnavn.
+\`\`\`
+
+\`\`\`
+Lag et sektordiagram som viser fordelingen
+av salg per region.
+\`\`\`
+
+Bildene genereres direkte i samtalen og kan lastes ned.
+
+## Steg 6: Få hjelp med Excel-formler
+
+ChatGPT er utmerket til å lage og forklare Excel-formler:
+
+\`\`\`
+Basert på dataene mine: hva er den riktige
+VLOOKUP-formelen for å hente produktnavn
+fra ark 2 basert på produkt-ID i kolonne A?
+\`\`\`
+
+\`\`\`
+Lag en formel som beregner gjennomsnittlig
+salgsverdi kun for Q1 (januar-mars) for
+salgsrepresentant "Ola Nordmann".
+\`\`\`
+
+## Steg 7: Be om en renset versjon av dataene
+
+\`\`\`
+Det virker som noen rader mangler salgsdato.
+Kan du lage en renset versjon av filen der:
+1. Rader uten dato er fjernet
+2. Alle datoer er formatert som DD.MM.ÅÅÅÅ
+3. Produktnavn er standardisert (fjern mellomrom,
+   gjør første bokstav stor)
+\`\`\`
+
+ChatGPT vil prosessere filen og gi deg en ny, nedlastbar versjon.
+
+## Steg 8: Eksporter resultater
+
+Etter analysen kan du be om:
+
+- **Eksport til Excel**: "Eksporter resultattabellen som Excel-fil"
+- **Eksport til CSV**: "Last ned som CSV"
+- **Python-kode**: "Vis meg Python-koden du brukte for denne analysen"
+
+Den siste er nyttig hvis du vil reprodusere analysen automatisk.
+
+## Begrensninger å kjenne til
+
+- ChatGPT kan ikke lagre endringer direkte i din originale fil — du laster ned en ny versjon
+- Svært store filer (hundretusenvis av rader) kan være trege å prosessere
+- Kompleks makroлогика i Excel reproduseres ikke automatisk
+- Analysen er ikke koblet til sanntidsdata — kun det du laster opp
+
+ChatGPT som dataanalyseverktøy er imponerende for de som ikke er komfortable med Python eller R, og gir rask innsikt i datasett uten å kreve teknisk kompetanse.`,
+    readingTime: 5,
+  },
+  {
+    slug: "copilot-i-teams-guide",
+    title: "Kom i gang med Microsoft Copilot i Teams",
+    excerpt: "Microsoft Copilot er innebygd i Teams og kan oppsummere møter, hente frem informasjon og hjelpe deg å skrive meldinger. Slik bruker du det.",
+    content: `## Hva er Microsoft Copilot i Teams?
+
+Microsoft Copilot er Microsofts AI-assistent som er integrert direkte i Microsoft 365, inkludert Teams. I Teams kan Copilot hjelpe deg med å oppsummere møter du har gått glipp av, finne frem informasjon fra samtaler, hjelpe deg med å skrive meldinger og oppsummere lange tråder.
+
+Copilot i Teams krever **Microsoft 365 Copilot**-lisens (30 USD/bruker/mnd), som typisk bestilles via bedriften.
+
+## Steg 1: Sjekk om du har tilgang
+
+1. Åpne **Microsoft Teams**
+2. Se etter Copilot-ikonet — en liten glinsende stjerne — øverst til høyre i Teams
+3. Alternativt: Åpne en chat eller kanal og se om du har et Copilot-ikon i meldingsfeltet
+
+Hvis du ikke ser ikonet, kontakt IT-avdelingen for å sjekke om bedriften har Copilot-lisenser.
+
+## Steg 2: Bruk Copilot i møter
+
+Dette er en av de mest verdifulle funksjonene. Under et møte:
+
+1. Klikk på **Copilot**-ikonet øverst til høyre i møtevinduet
+2. Et sidepanel åpner seg
+3. Du kan nå stille spørsmål om hva som har blitt sagt
+
+Eksempler på spørsmål under møtet:
+\`\`\`
+Hva ble besluttet i de siste 15 minuttene?
+\`\`\`
+\`\`\`
+Hvilke handlingspunkter er nevnt så langt?
+\`\`\`
+
+**Merk**: Copilot i møter krever at møtet er tatt opp eller har transkripering aktivert.
+
+## Steg 3: Oppsummer møter i etterkant
+
+Etter et møte:
+
+1. Gå til **Kalender** i Teams
+2. Finn møtet du vil oppsummere
+3. Klikk på møtet og velg **Recap**
+4. Her finner du automatisk generert:
+   - Møtesammendrag
+   - Handlingspunkter
+   - Nøkkelspørsmål og svar
+
+Du kan be Copilot om mer detalj:
+\`\`\`
+Hvem ble ansvarlig for oppgavene som ble nevnt?
+\`\`\`
+\`\`\`
+Hva var de viktigste punktene fra diskusjonen om budsjettet?
+\`\`\`
+
+## Steg 4: Bruk Copilot i kanaler og chatter
+
+I en kanal med lang historikk:
+
+1. Klikk på **Copilot**-ikonet øverst i kanalen
+2. Still spørsmål om innholdet i kanalen:
+
+\`\`\`
+Hva har vi diskutert om prosjekt X den siste uken?
+\`\`\`
+\`\`\`
+Er det noen uavklarte spørsmål i denne kanalen?
+\`\`\`
+
+I direktemeldinger:
+1. Åpne en samtale
+2. Klikk Copilot-ikonet
+3. Be om sammendrag av samtalen
+
+## Steg 5: Hjelp til å skrive meldinger
+
+I meldingsfeltet i en chat:
+
+1. Klikk på den lille Copilot-stjerneikonet i meldingsfeltet
+2. Beskriv hva du vil si:
+
+\`\`\`
+Skriv en høflig oppfølging til Jonas om
+statusoppdateringen vi avtalte på fredag.
+\`\`\`
+
+Copilot foreslår en ferdig melding. Du kan be om justeringer:
+\`\`\`
+Gjør den kortere og mer direkte.
+\`\`\`
+
+## Steg 6: Bruk Copilot-appen
+
+Teams har en dedikert Copilot-app i venstremenyen:
+
+1. Klikk på Copilot-ikonet i venstremenyen (eller søk etter "Copilot")
+2. Her kan du stille generelle spørsmål om Teams-aktiviteten din:
+
+\`\`\`
+Hva har skjedd mens jeg var borte de siste 3 dagene?
+\`\`\`
+\`\`\`
+Hvilke møter har jeg den kommende uken?
+\`\`\`
+\`\`\`
+Vis meg alle meldinger jeg er nevnt i den siste uken.
+\`\`\`
+
+## Tips for bedre resultater
+
+- **Aktiver transkripering i alle møter**: Copilot kan bare oppsummere møter med transkript
+- **Still spesifikke spørsmål**: "Hva ble sagt om leveransefristen" er bedre enn "oppsummer møtet"
+- **Bruk oppfølgingsspørsmål**: Copilot husker kontekst innenfor en Copilot-samtale
+
+Copilot i Teams er spesielt verdifullt for de som er i mange møter eller som ofte er borte fra kontoret og trenger å ta igjen informasjon raskt.`,
+    readingTime: 5,
+  },
+  {
+    slug: "dalle-3-i-chatgpt-guide",
+    title: "Slik bruker du DALL-E 3 direkte i ChatGPT",
+    excerpt: "ChatGPT har innebygd DALL-E 3 for bildegenerering. Lær å generere, redigere og forbedre bilder direkte i ChatGPT.",
+    content: `## Hva er DALL-E 3?
+
+DALL-E 3 er OpenAIs bildegeneratormodell, og den er innebygd direkte i ChatGPT Plus. Det betyr at du kan be ChatGPT om å lage bilder i naturlig tekst — uten å lære spesielle kommandoer. DALL-E 3 er spesielt god på å følge detaljerte instruksjoner og gjengi tekst i bilder korrekt.
+
+Krever ChatGPT Plus (20 USD/mnd).
+
+## Steg 1: Start en bildesessjon
+
+1. Logg inn på **chat.openai.com**
+2. Velg **GPT-4o** som modell (standard)
+3. Be enkelt og greit om et bilde:
+
+\`\`\`
+Lag et bilde av en norrøn viking som leser en moderne laptop
+i et vikinglanghus. Realistisk stilart.
+\`\`\`
+
+ChatGPT genererer bildet og viser det direkte i samtalen. Det tar vanligvis 10–30 sekunder.
+
+## Steg 2: Bruk ChatGPT til å forbedre prompten
+
+En av de største fordelene med DALL-E 3 i ChatGPT er at du kan bruke ChatGPT til å hjelpe deg med å skrive bedre bildebeskrivelser:
+
+\`\`\`
+Jeg vil lage et profesjonelt produktbilde av en kaffekopp
+for bruk på en nettside. Hjelp meg å skrive en god
+prompt for DALL-E, og lag deretter bildet.
+\`\`\`
+
+ChatGPT vil foreslå en forbedret prompt og deretter generere bildet.
+
+## Steg 3: Be om varianter
+
+Etter at et bilde er generert:
+
+\`\`\`
+Generer 4 varianter av dette bildet med ulike bakgrunner.
+\`\`\`
+
+\`\`\`
+Lag det samme bildet men med vinterbelysning i stedet.
+\`\`\`
+
+\`\`\`
+Prøv samme motiv men i akvarellstil.
+\`\`\`
+
+Hver forespørsel genererer et nytt bilde.
+
+## Steg 4: Kontroller stilart og format
+
+DALL-E 3 kan generere bilder i mange stilarter:
+
+**Fotografisk:**
+\`\`\`
+Profesjonelt produktfoto av en blå sneaker, hvit bakgrunn,
+studio lighting, høy oppløsning
+\`\`\`
+
+**Illustrasjon:**
+\`\`\`
+Fargerik flat design illustrasjon av Oslo skyline,
+minimal stil, passer til barnebok
+\`\`\`
+
+**Kunst:**
+\`\`\`
+Impresjonistisk maleri av Sognefjorden om høsten,
+inspirert av Monet, varme høstfarger
+\`\`\`
+
+**Logostilar:**
+\`\`\`
+Minimalistisk logo for en norsk teknologibedrift,
+blå og hvit, moderne sans-serif, vektor-stil
+\`\`\`
+
+## Steg 5: Legg til tekst i bilder
+
+DALL-E 3 er mye bedre enn tidligere versjoner på å gjengi tekst korrekt:
+
+\`\`\`
+Lag et reklamebanner med teksten "Sommersal 50%"
+i store, fete bokstaver, fargerik sommerstil,
+passer for sosiale medier (kvadratisk format)
+\`\`\`
+
+Husk: DALL-E er ikke perfekt på tekst, men langt bedre enn konkurrentene.
+
+## Steg 6: Bruk referansebilder
+
+Du kan laste opp et bilde og be ChatGPT om å lage noe lignende:
+
+1. Last opp et bilde i chatfeltet
+2. Beskriv hva du vil:
+
+\`\`\`
+Lag et bilde i samme stil som dette, men med en norsk fjordlandskap i bakgrunnen.
+\`\`\`
+
+**Merk**: DALL-E kan ikke kopiere stilen til levende kunstnere eller lage kopier av eksisterende bilder av copyright-hensyn.
+
+## Steg 7: Last ned bildene
+
+Klikk på det genererte bildet for å åpne det i full størrelse. Klikk deretter nedlastingsknappen (pil ned) for å lagre til datamaskinen.
+
+DALL-E 3 genererer bilder i 1024x1024 som standard. For bredformat kan du spesifisere:
+\`\`\`
+...lag bildet i bredformat (16:9)
+\`\`\`
+
+## Ting DALL-E 3 ikke kan gjøre
+
+- Generere realistiske bilder av spesifikke, levende personer
+- Reprodusere eksisterende fotografier eller kunstverker
+- Lage bilder med detaljert tekst over 3–4 ord konsekvent
+- Lage animasjoner eller videoer
+
+DALL-E 3 i ChatGPT er det enkleste inngangspunktet til AI-bildegenerering — ingen spesialkunnskap kreves, og du kan kommunisere naturlig på norsk.`,
+    readingTime: 5,
+  },
+  {
+    slug: "cursor-editor-oppsett",
+    title: "Sett opp Cursor AI-editor og koble til din kodebase",
+    excerpt: "Cursor er en AI-første kode-editor bygget på VS Code. Lær å installere, konfigurere og bruke Cursor effektivt med din eksisterende kodebase.",
+    content: `## Hva er Cursor?
+
+Cursor er en kode-editor bygget på toppen av VS Code, men med dyp AI-integrasjon bakt inn i selve editoren. I motsetning til GitHub Copilot (som er en tillegg til VS Code), er Cursor designet fra bunnen av rundt AI-assistert koding. Det støtter Claude 3.5 Sonnet, GPT-4o og andre toppmodeller.
+
+Cursor er gratis å prøve med 2-ukers prøveperiode, deretter 20 USD/mnd for Pro.
+
+## Steg 1: Last ned og installer Cursor
+
+1. Gå til **cursor.com**
+2. Klikk **Download** — velg ditt OS (macOS, Windows, Linux)
+3. Installer som vanlig
+4. Åpne Cursor
+
+Første gang ber Cursor deg om å importere innstillinger fra VS Code — anbefalt hvis du allerede bruker VS Code.
+
+## Steg 2: Opprett konto og logg inn
+
+1. Klikk **Sign in** i startvindeuet
+2. Opprett konto med e-post eller Google
+3. Velg modell — start med **claude-3.5-sonnet** for beste balanse mellom kvalitet og hastighet
+
+## Steg 3: Åpne prosjektet ditt
+
+1. Klikk **Open folder** og velg prosjektmappen din
+2. Cursor indekserer kodebasen din automatisk (tar noen sekunder til minutter avhengig av størrelse)
+3. Inndeksering gir AI-en kontekst om hele prosjektet ditt, ikke bare åpne filer
+
+## Steg 4: Lær de viktigste snarveiene
+
+**Inline-redigering (Cmd/Ctrl + K):**
+Markér kode, trykk \`Cmd+K\`, og beskriv hva du vil endre:
+\`\`\`
+Refaktorer denne funksjonen til å bruke async/await
+i stedet for promise chains
+\`\`\`
+
+**Chat-panel (Cmd/Ctrl + L):**
+Åpner chat-panel der du kan stille spørsmål om kodebasen:
+\`\`\`
+Forklar hvordan autentiseringsflyten fungerer i dette prosjektet
+\`\`\`
+
+**Composer (Cmd/Ctrl + Shift + I):**
+For større endringer som påvirker flere filer:
+\`\`\`
+Legg til validering for e-post og passord i registreringsskjemaet,
+oppdater både frontend-komponent og backend-API-rute
+\`\`\`
+
+## Steg 5: Bruk @ for å referere til kode
+
+I chat og Composer kan du referere spesifikt til:
+
+- **@Filnavn**: Refererer til en spesifikk fil
+- **@Mappenavn**: Refererer til alle filer i en mappe
+- **@Kodebit**: Refererer til markert kode
+- **@Docs**: Refererer til ekstern dokumentasjon
+- **@Web**: Søker på internett
+
+Eksempel:
+\`\`\`
+Se på @auth/session.ts og @middleware.ts —
+er det noe som kan forårsake session timeout?
+\`\`\`
+
+## Steg 6: Konfigurer regler for prosjektet
+
+Opprett filen \`.cursorrules\` i rotmappen for prosjektspesifikke instruksjoner:
+
+\`\`\`
+# Cursor Rules for [Prosjektnavn]
+
+Du er en erfaren TypeScript-utvikler.
+
+- Alltid bruk TypeScript strict mode
+- Bruk Zod for validering
+- Foretrekk funksjonskomponenter med hooks
+- Skriv alltid JSDoc-kommentarer for eksporterte funksjoner
+- Bruk norsk for kommentarer og variabelnavn der det er naturlig
+\`\`\`
+
+## Steg 7: Bruk Cursor for kodegjennomgang
+
+Cursor er utmerket for å forstå eksisterende kode:
+
+\`\`\`
+Gå gjennom @src/api/ og identifiser:
+1. Endepunkter som mangler feilhåndtering
+2. Steder der inputs ikke valideres
+3. N+1 databasespørsmålsproblemer
+\`\`\`
+
+## Tips for å få mest mulig ut av Cursor
+
+- **Gi kontekst**: "Vi bruker Next.js 15, tRPC og Prisma" sparer mange frem-og-tilbake-runder
+- **Del opp store oppgaver**: Composer er bedre for store endringer, Cmd+K for lokale justeringer
+- **Les gjennom AI-kode**: Cursor er ikke feilfri — alltid gjennomgå foreslåtte endringer
+- **Bruk Tab for aksept**: Tab-tasten aksepterer hele AI-forslaget, Ctrl+→ aksepterer ett ord
+
+Cursor er et av de mest kraftige verktøyene for utviklere i 2025, og mange team rapporterer 30–50 % økt produktivitet etter innføring.`,
+    readingTime: 6,
+  },
+  {
+    slug: "claude-dokumentanalyse",
+    title: "Slik bruker du Claude for dokumentanalyse",
+    excerpt: "Claude kan lese og analysere lange dokumenter med presisjon. Lær å laste opp filer, stille de riktige spørsmålene og tolke resultatene.",
+    content: `## Hvorfor Claude for dokumentanalyse?
+
+Claude har et av de største kontekstvinduene blant AI-assistenter — opptil 200 000 tokens, tilsvarende omtrent 150 000 ord eller en hel roman. Dette gjør Claude spesielt egnet til å analysere lange dokumenter som årsrapporter, kontrakter, lovtekster, forskningsartikler og teknisk dokumentasjon.
+
+Claude er tilgjengelig på **claude.ai** — gratisplan fungerer, men Claude Pro gir høyere grenser.
+
+## Steg 1: Last opp dokumentet
+
+1. Gå til **claude.ai** og start en ny samtale
+2. Klikk på binders-ikonet i chatfeltet
+3. Last opp dokumentet ditt:
+   - PDF (maks ~32 MB)
+   - Word-dokument (.docx)
+   - Tekstfil (.txt)
+   - Markdown-fil (.md)
+
+Du kan laste opp opptil 5 filer per samtale.
+
+## Steg 2: Start med en orienterende oppgave
+
+Be Claude om å orientere seg i dokumentet før du stiller spesifikke spørsmål:
+
+\`\`\`
+Jeg har lastet opp en årsrapport. Kan du gi meg:
+1. En 3-setningers oppsummering av dokumentet
+2. Nøkkeltalene nevnt i rapporten
+3. De viktigste risikoene selskapet beskriver
+\`\`\`
+
+## Steg 3: Still presise analytiske spørsmål
+
+Jo mer spesifikk du er, jo bedre svar:
+
+**For kontrakter:**
+\`\`\`
+Gå gjennom kontrakten og identifiser:
+- Oppsigelsesklausuler og varslingsfrister
+- Eksklusivitetsbestemmelser
+- Ansvarsfraskrivelser
+- Automatiske forlengelsesklausuler
+
+Merk hvilken side og paragraf du refererer til.
+\`\`\`
+
+**For forskningsartikler:**
+\`\`\`
+Oppsummer metodologien brukt i denne studien,
+begrens og svakheter forfatterne selv erkjenner,
+og konklusjonens relevans for norske bedrifter.
+\`\`\`
+
+**For lovtekster og reguleringer:**
+\`\`\`
+Hva er de konkrete forpliktelsene denne forskriften
+pålegger selskaper med over 50 ansatte?
+List dem i prioritert rekkefølge.
+\`\`\`
+
+## Steg 4: Krysskontroller mellom dokumenter
+
+Last opp flere dokumenter og sammenlign:
+
+\`\`\`
+Jeg har lastet opp to versjoner av den samme kontrakten.
+Identifiser alle endringer mellom versjon 1 og versjon 2,
+spesielt endringer som er til vår ugunst.
+\`\`\`
+
+\`\`\`
+Sammenlign disse to tilbudene fra leverandørene.
+Lag en tabell med nøkkelpunkter og anbefal hvilken
+vi bør velge for et selskap med fokus på langsiktig partnerskap.
+\`\`\`
+
+## Steg 5: Bruk Claude til å finne det du leter etter
+
+Claude kan fungere som en intelligent søkefunksjon:
+
+\`\`\`
+Er det noen steder i dette dokumentet der selskapet
+nevner risiko knyttet til AI eller automatisering?
+\`\`\`
+
+\`\`\`
+Finn alle steder der et tall over 1 million kroner er nevnt
+og gi meg konteksten rundt hvert tall.
+\`\`\`
+
+## Steg 6: Be om strukturert output
+
+For enklere videre bruk:
+
+\`\`\`
+Basert på rapporten, lag en tabell med to kolonner:
+"Utfordring" og "Foreslått tiltak".
+Maks 10 rader, de viktigste punktene øverst.
+\`\`\`
+
+\`\`\`
+Ekstraher alle nevnte datoer og frister fra kontrakten
+i en kronologisk liste med beskrivelse av hva som skal skje.
+\`\`\`
+
+## Steg 7: Verifiser og følg opp
+
+Claude er ærlig om usikkerhet. Hvis et svar virker feil:
+
+\`\`\`
+Du sa at fristen er 30 dager, men jeg er usikker.
+Kan du finne det eksakte avsnittet i dokumentet
+som beskriver denne fristen?
+\`\`\`
+
+Claude vil sitere det relevante avsnittet slik at du kan verifisere selv.
+
+## Tips for bedre resultater
+
+- **Fortell kontekst**: "Jeg er en leder som skal presentere dette for styret" endrer tilnærmingen
+- **Angi faglig nivå**: "Forklar uten juridisk fagspråk" vs "gi en teknisk juridisk analyse"
+- **Del opp komplekse oppgaver**: Analyser én seksjon om gangen for svært lange dokumenter
+- **Be om begrunnelse**: "Forklar hvilken del av dokumentet dette er basert på"
+
+Claude for dokumentanalyse er en av de mest praktiske og tidsbesparende brukscase for AI i arbeidshverdagen. En rapport som ville tatt to timer å lese gjennom kan oppsummeres på to minutter.`,
+    readingTime: 5,
+  },
+  {
+    slug: "gemini-google-workspace",
+    title: "Kom i gang med Gemini i Google Workspace",
+    excerpt: "Google Gemini er integrert i Gmail, Docs og Drive. Lær å bruke det til å skrive e-poster, sammenfatte dokumenter og jobbe raskere.",
+    content: `## Hva er Gemini i Google Workspace?
+
+Google Gemini er Googles AI-assistent, og den er innebygd direkte i Google Workspace-appene: Gmail, Docs, Sheets, Slides og Drive. Du kan bruke Gemini til å skrive utkast, oppsummere e-posttråder, generere innhold i dokumenter og søke i Drive.
+
+Gemini er inkludert i **Google Workspace Business Standard og høyere** (fra ca. 14 USD/bruker/mnd), samt i **Google One AI Premium** (19.99 USD/mnd for privatpersoner).
+
+## Steg 1: Sjekk tilgangen din
+
+1. Logg inn på **workspace.google.com**
+2. Åpne Gmail
+3. Se etter Gemini-ikonet (et glinsende G eller stjerne) i høyre sidefelt eller i skrivefeltet
+
+Hvis du ikke ser Gemini, sjekk om Workspace-abonnementet ditt inkluderer Gemini, eller aktiver det via adminkonsollet.
+
+## Steg 2: Bruk Gemini i Gmail
+
+**Oppsummer en e-posttrås:**
+1. Åpne en lang e-posttrås
+2. Klikk på **Summarize this email** øverst i tråden
+3. Gemini gir deg en kortfattet oppsummering med nøkkelpunkter
+
+**Skriv e-post med Gemini:**
+1. Klikk **Skriv** for å starte en ny e-post
+2. Klikk på **Hjelp meg å skrive** (blyant-ikon med stjerne)
+3. Beskriv hva du vil si:
+
+\`\`\`
+Skriv en profesjonell oppfølgings-e-post til en kunde
+som ikke har svart på tilbudet vi sendte for 2 uker siden.
+Tonen skal være vennlig men påminnende.
+\`\`\`
+
+4. Gemini genererer et utkast som du kan redigere
+
+**Forbedre eksisterende tekst:**
+Marker tekst i en e-post du skriver, klikk Gemini-ikonet, og velg:
+- **Formaliser** — gjør teksten mer profesjonell
+- **Kortere** — komprimér innholdet
+- **Utarbeid** — utvid med mer detalj
+
+## Steg 3: Bruk Gemini i Google Docs
+
+**Start et nytt dokument med AI:**
+1. Åpne Google Docs
+2. Start et nytt dokument
+3. Klikk på **Hjelp meg å skrive** øverst til venstre
+4. Beskriv hva du vil ha:
+
+\`\`\`
+Skriv en agenda for et kick-off møte for et nytt
+produktutviklingsprosjekt. Møtet varer 2 timer
+og skal dekke: prosjektmål, roller, milepæler og risiko.
+\`\`\`
+
+**Forbedre eksisterende tekst:**
+Marker et avsnitt, høyreklikk og velg **Hjelp meg å omskrive**, eller klikk blyant-ikonet som dukker opp.
+
+**Bruk Gemini-sidepanel:**
+1. Klikk Gemini-ikonet øverst til høyre i Docs
+2. Et sidepanel åpner seg
+3. Still spørsmål om dokumentet ditt:
+
+\`\`\`
+Oppsummer hoveddokumentets argumenter i 5 punkter.
+\`\`\`
+
+\`\`\`
+Finnes det noen motstridende påstander i dokumentet?
+\`\`\`
+
+## Steg 4: Bruk Gemini i Google Drive
+
+1. Åpne **Google Drive**
+2. Klikk på Gemini-ikonet øverst til høyre
+3. Still spørsmål om filene i Drive:
+
+\`\`\`
+Finn alle dokumenter relatert til prosjekt "Sommeroffensiv"
+\`\`\`
+
+\`\`\`
+Oppsummer innholdet i kontrakten jeg lastet opp forrige uke
+\`\`\`
+
+Gemini har tilgang til alle filer i Drive du eier.
+
+## Steg 5: Bruk Gemini i Google Sheets
+
+Gemini kan hjelpe deg med regneark:
+
+1. Åpne et Sheets-dokument
+2. Klikk Gemini-ikonet i høyre sidefelt
+3. Still dataspørsmål:
+
+\`\`\`
+Lag en formel som beregner gjennomsnittlig salgspris
+for Q1 basert på dataene i kolonne C og D
+\`\`\`
+
+\`\`\`
+Analyser dataene i dette arket og finn de 5
+kundene med høyest livstidsverdi
+\`\`\`
+
+## Tips for bedre resultater
+
+- **Gi kontekst om bedriften**: "Vi er et norsk B2B SaaS-selskap" hjelper Gemini tilpasse svarene
+- **Spesifiser mottaker**: "Skriv til en ikke-teknisk CEO" endrer tonen og kompleksitetsnivået
+- **Bruk norsk**: Gemini forstår og svarer på norsk uten problemer
+- **Kombiner med andre verktøy**: Generer innhold med Gemini, analyser det med egne øyne
+
+Gemini i Workspace er most verdifullt for de som allerede er tungt investert i Google-plattformen og ønsker AI uten å bytte verktøy.`,
+    readingTime: 5,
+  },
+  {
+    slug: "notebooklm-audio-overview",
+    title: "Slik lager du en AI-podkast med NotebookLM Audio Overview",
+    excerpt: "NotebookLMs Audio Overview-funksjon lager automatisk en podkastepisode fra dine dokumenter. Lær å bruke den og tilpasse resultatet.",
+    content: `## Hva er Audio Overview?
+
+Audio Overview er en funksjon i Google NotebookLM som automatisk konverterer dokumenter og notater til en podkastlignende lydopptakt der to AI-stemmer diskuterer innholdet. Det er overraskende naturlig og er et utmerket verktøy for å lære innhold mens du er på farten.
+
+NotebookLM er gratis og krever kun en Google-konto.
+
+## Steg 1: Forbered notatblokken din
+
+Før du lager Audio Overview, sørg for at du har lastet opp relevante dokumenter:
+
+1. Gå til **notebooklm.google.com**
+2. Åpne eller opprett en notatblokk
+3. Last opp dokumentene du vil ha oppsummert:
+   - PDF-er, Word-dokumenter
+   - Google Docs
+   - Nettsider (via URL)
+   - YouTube-videoer
+
+For best resultat: last opp 2–5 fokuserte dokumenter om samme tema fremfor mange løse kilder.
+
+## Steg 2: Generer Audio Overview
+
+1. Klikk på **Notebook guide** (sirkel-ikonet) øverst til høyre
+2. Rull ned til **Audio Overview**-seksjonen
+3. Klikk **Generate**
+4. Vent 1–3 minutter mens NotebookLM prosesserer
+
+Du ser en lyd-spiller med to AI-stemmer (en mannlig og en kvinnelig).
+
+## Steg 3: Tilpass Audio Overview med instruksjoner
+
+Fra og med 2024 kan du gi instruksjoner til Audio Overview:
+
+1. Klikk på **Customize**-knappen (tannhjul-ikon) ved siden av Generate
+2. Skriv inn hva du vil at podkasten skal fokusere på:
+
+\`\`\`
+Fokuser på de praktiske implikasjonene for norske SMB-er.
+Hold det enkelt og unngå teknisk sjargong.
+Begynn med de viktigste poengene.
+\`\`\`
+
+\`\`\`
+Lag dette som en debatt der de to stemmene er
+uenige om temaet og presenterer ulike synspunkter.
+\`\`\`
+
+\`\`\`
+Forklar konseptene som om lytteren aldri har hørt
+om AI før. Bruk enkle analogier.
+\`\`\`
+
+3. Klikk **Generate** igjen med instruksjonene
+
+## Steg 4: Lytt til og vurder resultatet
+
+Bruk avspillingskontrollene:
+- Spill, pause, fremover/bakover
+- Juster avspillingshastighet (0.5x til 2x)
+- Se transkripsjon ved å klikke "Transcript"-knappen
+
+Vurder om:
+- Alle nøkkelpunkter er dekket
+- Tone og detaljeringsnivå passer ditt formål
+- Lengden er passende (typisk 5–15 minutter)
+
+## Steg 5: Last ned lydopptaket
+
+1. Klikk på de tre prikkene (...) ved Audio Overview-spilleren
+2. Velg **Download**
+3. Filen lastes ned som en MP3-fil
+
+Du kan nå:
+- Lytte i en poddkast-app
+- Dele med kolleger
+- Spille av i bilen eller under trening
+
+## Steg 6: Bruksscenarier
+
+**Til faglig opplæring:**
+Last opp bransjerapporter, artikler og interne dokumenter. Generer en podkast og del med teamet som en alternativ måte å konsumere innhold på.
+
+**Til studier:**
+Last opp pensumkapitler og forelesningsnotater. Lytt til oppsummeringen mens du lager mat eller trener.
+
+**Til møteforberedelse:**
+Last opp bakgrunnsdokumenter for et viktig møte. Generer en podkast og lytt på vei til møtet.
+
+**Til kundepresentasjoner:**
+Lag en Audio Overview av produktbeskrivelse og kundecaser, og send den til en potensiell kunde som en unik måte å dele informasjon på.
+
+## Begrensninger å kjenne til
+
+- Audio Overview er på engelsk — det finnes ingen norsk versjon per nå
+- Du kan ikke redigere manuset direkte, kun gi generelle instruksjoner
+- Kvaliteten varierer — teknisk og svært spesialisert innhold kan bli forenklet for mye
+- Stemmene er AI-genererte og høres naturlige ut, men er ikke ekte mennesker
+
+## Tips for bedre Audio Overviews
+
+- **Noen kilder er bedre enn mange**: 3 gode, fokuserte dokumenter gir bedre podkast enn 20 løse
+- **Gi eksplisitt målgruppe**: "For en leder uten teknisk bakgrunn" endrer presentasjonen merkbart
+- **Regenerer hvis du er misfornøyd**: Varianter kan være bedre
+- **Les transkripsjon for fakta-sjekk**: AI kan forenkle eller misforstå — sjekk mot originalkilden
+
+Audio Overview er en overraskende nyttig funksjon som gjør det enklere å lære og dele kunnskap i et format som passer vår travle hverdag.`,
+    readingTime: 5,
+  },
+  {
+    slug: "chatgpt-api-forste-kall",
+    title: "Sett opp ChatGPT API-nøkkel og gjør ditt første API-kall",
+    excerpt: "Lær å hente din OpenAI API-nøkkel, sette opp Python-miljøet og gjøre ditt første programmatiske kall til ChatGPT.",
+    content: `## Hva er OpenAI API?
+
+OpenAI API gir deg programmatisk tilgang til GPT-4, GPT-4o og andre modeller — slik at du kan bygge egne applikasjoner, automatisere arbeidsflyter og integrere AI direkte i dine systemer. Det er ulikt ChatGPT-nettsiden: du betaler per bruk, og du kontrollerer alt selv.
+
+Pris: GPT-4o mini koster 0.15 USD per million inntokens. Du betaler bare for det du bruker.
+
+## Steg 1: Opprett OpenAI-konto og legg til betalingsinformasjon
+
+1. Gå til **platform.openai.com**
+2. Opprett konto eller logg inn
+3. Gå til **Settings → Billing**
+4. Klikk **Add payment method** og legg inn kredittkort
+5. Sett et månedlig utgiftstak under **Usage limits** (anbefalt: start med 10 USD)
+
+**Viktig**: API og ChatGPT-abonnement er separate. ChatGPT Plus gir ikke API-tilgang, og API-tilgang gir ikke ChatGPT Plus.
+
+## Steg 2: Generer en API-nøkkel
+
+1. Gå til **platform.openai.com/api-keys**
+2. Klikk **Create new secret key**
+3. Gi nøkkelen et beskrivende navn (f.eks. "Test lokal utvikling")
+4. Kopier nøkkelen — den vises kun én gang
+
+**Sikkerhet**: Aldri del API-nøkkelen din. Aldri putt den direkte i kode som pusher til GitHub. Bruk miljøvariabler.
+
+## Steg 3: Sett opp Python-miljøet
+
+Forutsetter at du har Python 3.8+ installert.
+
+Opprett et nytt prosjektmappe og virtualenv:
+
+\`\`\`bash
+mkdir mitt-openai-prosjekt
+cd mitt-openai-prosjekt
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+# eller: venv\\Scripts\\activate  # Windows
+\`\`\`
+
+Installer OpenAI Python SDK:
+
+\`\`\`bash
+pip install openai
+\`\`\`
+
+## Steg 4: Sett opp miljøvariabel for API-nøkkelen
+
+Opprett en \`.env\`-fil i prosjektmappen:
+
+\`\`\`
+OPENAI_API_KEY=sk-...din-nøkkel-her...
+\`\`\`
+
+Installer python-dotenv:
+
+\`\`\`bash
+pip install python-dotenv
+\`\`\`
+
+## Steg 5: Gjør ditt første API-kall
+
+Opprett filen \`test.py\`:
+
+\`\`\`python
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[
+        {
+            "role": "system",
+            "content": "Du er en hjelpsom assistent som svarer på norsk."
+        },
+        {
+            "role": "user",
+            "content": "Forklar hva et API er med enkle ord."
+        }
+    ]
+)
+
+print(response.choices[0].message.content)
+\`\`\`
+
+Kjør scriptet:
+
+\`\`\`bash
+python test.py
+\`\`\`
+
+Du skal se et norsk svar i terminalen.
+
+## Steg 6: Forstå svaret og kostnadene
+
+Svaret inneholder mer enn bare teksten:
+
+\`\`\`python
+print(response.usage.prompt_tokens)       # Tokens i input
+print(response.usage.completion_tokens)   # Tokens i output
+print(response.usage.total_tokens)        # Totalt
+\`\`\`
+
+For å estimere kostnad:
+- GPT-4o mini: 0.15 USD per million input-tokens, 0.60 USD per million output-tokens
+- Et typisk svar er 200–500 tokens — altså brøkdeler av en cent
+
+## Steg 7: Bygg en enkel chatbot
+
+Her er en enkel chatbot som husker samtalehistorikk:
+
+\`\`\`python
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+messages = [
+    {"role": "system", "content": "Du er en hjelpsom norsk assistent."}
+]
+
+print("Chat med GPT-4o mini. Skriv 'avslutt' for å stoppe.")
+
+while True:
+    user_input = input("Du: ")
+    if user_input.lower() == "avslutt":
+        break
+
+    messages.append({"role": "user", "content": user_input})
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=messages
+    )
+
+    assistant_message = response.choices[0].message.content
+    messages.append({"role": "assistant", "content": assistant_message})
+
+    print(f"GPT: {assistant_message}")
+\`\`\`
+
+Du har nå en fungerende chatbot som kjører fra terminalen og husker hele samtalen.
+
+## Neste steg
+
+- Les OpenAI dokumentasjonen på **platform.openai.com/docs**
+- Utforsk function calling for å la modellen kalle dine egne funksjoner
+- Se på streaming for å vise svar ord for ord slik ChatGPT gjør det`,
+    readingTime: 6,
+  },
+  {
+    slug: "copilot-word-rapporter",
+    title: "Slik bruker du Copilot i Word til å skrive rapporter",
+    excerpt: "Microsoft Copilot i Word hjelper deg skrive, omstrukturere og forbedre rapporter. Lær de viktigste funksjonene og arbeidsflytene.",
+    content: `## Hva kan Copilot gjøre i Word?
+
+Microsoft Copilot i Word kan hjelpe deg med å skrive fra bunnen av, omstrukturere eksisterende tekst, oppsummere lange dokumenter, tilpasse tone og stil, og generere innhold basert på instruksjoner. Det er som å ha en skriveassistent alltid tilgjengelig i dokumentet.
+
+Krever Microsoft 365 Copilot-lisens (30 USD/bruker/mnd).
+
+## Steg 1: Åpne et dokument og finn Copilot
+
+1. Åpne **Microsoft Word** (desktop-app eller web på office.com)
+2. Opprett et nytt dokument eller åpne et eksisterende
+3. Klikk på **Hjem**-fanen og finn **Copilot**-knappen i båndet
+4. Alternativt: Trykk **Alt + I** (Windows) for å åpne Copilot-panelet
+
+Du ser Copilot-panelet til høyre i dokumentet.
+
+## Steg 2: Start en rapport fra scratch
+
+I et tomt dokument:
+
+1. Klikk i dokumentet der du vil begynne
+2. Klikk på **Draft with Copilot**-knappen som vises ved toppen av dokumentet
+3. Beskriv rapporten:
+
+\`\`\`
+Skriv en lederrapport om status for IT-moderniseringsprosjektet
+i vår bedrift. Rapporten skal ha seksjonene:
+Sammendrag, Fremdrift siste kvartal, Utfordringer,
+Neste steg og Budsjettbehov. Profesjonell tone,
+ca. 2 sider.
+\`\`\`
+
+4. Klikk **Generate**
+5. Copilot skriver et utkast direkte i dokumentet
+
+## Steg 3: Forbedre og endre eksisterende tekst
+
+Marker et avsnitt du vil forbedre:
+
+1. Marker teksten
+2. Klikk på **Copilot**-ikonet som dukker opp ved markeringen
+3. Velg en handling:
+   - **Omskriv** — ny versjon av samme innhold
+   - **Auto-fullfør** — fortsett teksten
+   - **Kortere** — komprimér
+   - **Lengre** — utvid
+   - **Mer formell** — tilpass tone
+   - **Tilpass** — gi egne instruksjoner
+
+## Steg 4: Bruk Copilot-panelet for spesifikke oppgaver
+
+I Copilot-panelet til høyre kan du:
+
+**Oppsummer dokumentet:**
+\`\`\`
+Oppsummer dette dokumentet i 5 punkter for en
+ikke-teknisk leder.
+\`\`\`
+
+**Finn informasjon i dokumentet:**
+\`\`\`
+Hvilke frister er nevnt i dette dokumentet?
+\`\`\`
+
+**Be om forbedringer:**
+\`\`\`
+Er det noen seksjoner som mangler i denne rapporten
+sammenlignet med en standard styreberetning?
+\`\`\`
+
+**Sjekk konsistens:**
+\`\`\`
+Bruk vi konsekvent "bedriften" eller "selskapet"
+som referanse gjennom hele dokumentet?
+\`\`\`
+
+## Steg 5: Generer innhold basert på referansefiler
+
+Du kan referere til andre dokumenter i Copilot:
+
+1. I Copilot-panelet, skriv:
+\`\`\`
+/
+\`\`\`
+2. En liste over nylige filer i OneDrive vises
+3. Velg en fil som referanse
+
+\`\`\`
+Basert på Q3-rapporten (referanser til fil),
+skriv en sammenlignende analyse av Q4-tallene
+som er i dette dokumentet.
+\`\`\`
+
+## Steg 6: Arbeidsflyt for en komplett rapport
+
+Her er en anbefalt arbeidsflyt for å skrive en god rapport:
+
+1. **Generer struktur**: Be Copilot om en innholdsfortegnelse
+2. **Skriv seksjon for seksjon**: Bruk Draft with Copilot for hver seksjon med spesifikke instruksjoner
+3. **Fyll inn fakta og tall**: Rediger AI-teksten manuelt med reell data
+4. **Forbedre helheten**: Be Copilot om å sjekke konsistens og tone
+5. **Korrekturles**: Gjennomgå alt selv — AI gjør feil
+
+## Vanlige feil å unngå
+
+- **Stol ikke blindt på AI-innholdet**: Copilot kan finne på fakta og tall — fyll alltid inn reell data
+- **Ikke publiser uten manuell gjennomgang**: AI-tekst er et utkast, ikke ferdig produkt
+- **Ikke bruk for sensitive dokumenter**: Sjekk bedriftens retningslinjer for hva som er tillatt å behandle i Copilot
+
+Copilot i Word er et verktøy som er best som et utkast-verktøy og skriveassistent. Det sparer tid på strukturen og de "tomme ark"-problemene, men krever alltid et kritisk menneskelig blikk.`,
+    readingTime: 5,
+  },
+  {
+    slug: "stable-diffusion-kom-i-gang",
+    title: "Kom i gang med Stable Diffusion på din PC",
+    excerpt: "Stable Diffusion er et gratis, lokalt bildegeneratorverktøy. Lær å installere AUTOMATIC1111 og generere dine første bilder uten å betale for abonnement.",
+    content: `## Hva er Stable Diffusion?
+
+Stable Diffusion er en åpen kildekode-bildegenereringsmodell som kjører lokalt på din PC — ingen skyabonnement, ingen betalingsgrenser, full kontroll. Det er mer teknisk å sette opp enn Midjourney eller DALL-E, men gir deg full frihet.
+
+**Systemkrav:**
+- Windows 10/11 eller Linux (macOS har redusert støtte)
+- NVIDIA GPU med minimum 4 GB VRAM (8 GB anbefalt)
+- 16 GB RAM anbefalt
+- 20 GB ledig diskplass
+
+## Steg 1: Installer AUTOMATIC1111 Web UI
+
+AUTOMATIC1111 er det mest populære brukergrensesnittet for Stable Diffusion.
+
+**Windows-installasjon:**
+
+1. Installer **Python 3.10.x** fra python.org
+   - Huk av "Add Python to PATH" under installasjon
+
+2. Installer **Git** fra git-scm.com
+
+3. Åpne Command Prompt og klone repositoriet:
+
+\`\`\`bash
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+cd stable-diffusion-webui
+\`\`\`
+
+4. Kjør webUI-et for første gang:
+
+\`\`\`bash
+webui-user.bat
+\`\`\`
+
+Første kjøring laster ned alle nødvendige avhengigheter automatisk. Dette tar 10–30 minutter.
+
+## Steg 2: Last ned en modell
+
+Stable Diffusion trenger en modell (checkpoint-fil) for å generere bilder:
+
+1. Gå til **civitai.com** eller **huggingface.co**
+2. Last ned en modell — anbefalte startmodeller:
+   - **Realistic Vision v5** — for fotorealistiske bilder
+   - **DreamShaper** — allsidig, god for mange stilarter
+   - **Anything v5** — for anime/illustrasjonsbilder
+3. Kopier .safetensors- eller .ckpt-filen til mappen:
+\`\`\`
+stable-diffusion-webui/models/Stable-diffusion/
+\`\`\`
+
+## Steg 3: Start Web UI og velg modell
+
+1. Kjør \`webui-user.bat\` igjen
+2. Åpne nettleseren på **http://127.0.0.1:7860**
+3. Øverst til venstre: velg modellen du lastet ned
+
+## Steg 4: Generer ditt første bilde
+
+I **txt2img**-fanen:
+
+**Positiv prompt** (hva du vil ha):
+\`\`\`
+portrait of a Norwegian woman, natural lighting,
+detailed face, photorealistic, 4k, professional photography
+\`\`\`
+
+**Negativ prompt** (hva du ikke vil ha):
+\`\`\`
+blurry, bad anatomy, deformed, ugly, low quality,
+watermark, text, extra fingers
+\`\`\`
+
+**Innstillinger:**
+- **Steps**: 20–30 (høyere = bedre kvalitet, tregere)
+- **CFG Scale**: 7 (hvor nøye modellen følger prompten)
+- **Size**: 512x512 for SD 1.5, 1024x1024 for SDXL
+
+Klikk **Generate** og vent 10–60 sekunder avhengig av GPU-en din.
+
+## Steg 5: Forstå de viktigste innstillingene
+
+**Sampling method:**
+- **DPM++ 2M Karras** — anbefalt for de fleste brukstilfeller
+- **Euler a** — raskere, litt mer kreativ
+- **DDIM** — god for lavere step-tall
+
+**Seed:**
+- -1 betyr tilfeldig. Skriv inn et spesifikt tall for å reprodusere eksakt samme bilde.
+
+**Hires. fix:**
+Aktivér denne for bilder over 512x512 for å unngå at ansikter og detaljer ser rare ut.
+
+## Steg 6: Bruk img2img for redigering
+
+**img2img** lar deg bruke et eksisterende bilde som utgangspunkt:
+
+1. Gå til **img2img**-fanen
+2. Last opp et bilde
+3. Sett **Denoising strength** (0.3 = lite endring, 0.8 = stor endring)
+4. Skriv en prompt som beskriver hva du vil endre
+5. Generer
+
+## Steg 7: Installer utvidelser
+
+AUTOMATIC1111 har et rikt utvidelsessystem. Gå til **Extensions**-fanen:
+
+**Populære utvidelser:**
+- **ControlNet** — kontroller posisjon og komposisjon med referansebilder
+- **ADetailer** — forbedrer ansikter automatisk
+- **tiled-diffusion** — generer svært store bilder
+
+Klikk **Install from URL** og lim inn utvidelsens GitHub-URL.
+
+Stable Diffusion har en brattere læringskurve enn skybaserte verktøy, men gir deg ubegrenset bildegenerering uten kostnader og full kontroll over resultatet.`,
+    readingTime: 7,
+  },
+  {
+    slug: "adobe-firefly-kom-i-gang",
+    title: "Slik lager du AI-genererte bilder med Adobe Firefly",
+    excerpt: "Adobe Firefly er Adobes AI-bildegeneratorverktøy, lisensiert for kommersiell bruk. Lær å generere, redigere og bruke bilder i dine prosjekter.",
+    content: `## Hva er Adobe Firefly?
+
+Adobe Firefly er Adobes AI-bildegeneratorverktøy, designet spesielt for kreative fagpersoner. Det skiller seg fra Midjourney og DALL-E på ett viktig punkt: Firefly er trent utelukkende på lisensiert innhold, noe som gjør bildene **trygge å bruke kommersielt**.
+
+Firefly er tilgjengelig på **firefly.adobe.com** (web), i Adobe Express (gratis), og integrert i Photoshop og Illustrator.
+
+**Priser:**
+- 25 generative kreditter/mnd gratis (gratis Adobe-konto)
+- Adobe Express Premium (10 USD/mnd): 250 kreditter
+- Creative Cloud-abonnement inkluderer Firefly
+
+## Steg 1: Opprett Adobe-konto
+
+1. Gå til **firefly.adobe.com**
+2. Klikk **Sign in** eller **Sign up**
+3. Opprett gratis konto med e-post
+4. Verifiser e-posten din
+
+Du logger direkte inn og ser Fireflys startside.
+
+## Steg 2: Generer ditt første bilde
+
+1. Klikk **Text to image** på startsiden
+2. Skriv en beskrivelse i promptfeltet:
+
+\`\`\`
+A modern Norwegian office space with fjord view,
+minimalist Scandinavian design, natural wood elements,
+large windows, bright daylight
+\`\`\`
+
+3. Klikk **Generate**
+
+Firefly genererer 4 bilder. Hvert bilde koster 1 generativ kreditt.
+
+## Steg 3: Bruk stilvalg og innstillinger
+
+Før du genererer, juster innstillingene i høyre panel:
+
+**Sideforhold:**
+- Firkantet (1:1) — for sosiale medier
+- Landskap (4:3 eller 16:9) — for bannere og presentasjoner
+- Portrett (3:4) — for plakater og mobil
+
+**Content type:**
+- Photo — fotorealistisk
+- Art — kunstnerisk og illustrativt
+- Graphic — grafikk og design
+
+**Stileffekter:**
+Velg fra en rekke visuelle stilarter:
+- Vintage, minimalist, bokeh, HDR photography, digital art osv.
+
+**Farge og tone:**
+Klikk for å sette mørk, lys, fargerik eller monokromatisk tone.
+
+## Steg 4: Bruk referansebilde for stil
+
+**Match a style:**
+1. Klikk **Reference image** i stilpanelet
+2. Last opp et bilde med den visuelle stilen du vil ha
+3. Juster **Strength**-slideren (where 70–80 er vanligvis godt)
+4. Generer
+
+Dette er nyttig for å holde konsistent stil på tvers av mange bilder i ett prosjekt.
+
+## Steg 5: Generative Fill i Photoshop
+
+Hvis du har Adobe Creative Cloud:
+
+1. Åpne et bilde i **Photoshop**
+2. Bruk marquee-verktøyet til å markere et område
+3. Klikk **Generative Fill** i kontekst-verktøylinjen
+4. Beskriv hva du vil fylle inn:
+
+\`\`\`
+Replace the background with a sunset over a Norwegian fjord
+\`\`\`
+
+Dette er ekstremt nyttig for:
+- Fjerne uønskede objekter
+- Utvide bilder (outpainting)
+- Legge til elementer i eksisterende foto
+
+## Steg 6: Text to Vector i Illustrator
+
+Firefly er også integrert i Illustrator for vektorgenerering:
+
+1. Åpne **Adobe Illustrator**
+2. Gå til **Edit → Generate from text**
+3. Beskriv en vektorgrafisk:
+
+\`\`\`
+Minimal line art icon of a Norwegian mountain cabin,
+suitable for logo use, black and white
+\`\`\`
+
+Resultatet er et editerbart vekterobjekt.
+
+## Steg 7: Last ned og bruk bildene
+
+1. Hold over bildet du vil ha
+2. Klikk **Download**-ikonet
+3. Velg format (JPG eller PNG) og oppløsning
+
+Alle bilder generert med Firefly er merket med **Adobe Content Credentials** — metadata som viser at bildet er AI-generert. Dette er en del av innholdstransparens-initiativet som bransjebransjen jobber med.
+
+## Tips for bedre resultater
+
+- **Vær detaljert på belysning**: "Soft golden hour lighting from the left" gir mye bedre resultater enn ingen lysbeskrivelse
+- **Angi kamerateknisk**: "Shot on 50mm, shallow depth of field" for mer fotorealistisk utseende
+- **Bruk negativ prompt**: Klikk "Negative prompt" for å ekskludere uønskede elementer
+- **Kombiner med Adobe Express**: Ferdig genererte bilder kan redigeres direkte i Adobe Express for tekst, beskjæring og deling
+
+Adobe Firefly er det beste alternativet for kommersielt bruk og er spesielt godt integrert for de som allerede er i Adobe-økosystemet.`,
+    readingTime: 6,
+  },
+  {
+    slug: "notion-ai-oppsett-og-bruk",
+    title: "Sett opp og bruk Notion AI i dine notater",
+    excerpt: "Notion AI er direkte integrert i Notion og lar deg skrive, oppsummere og analysere innhold i notatene dine. Slik setter du det opp og bruker det effektivt.",
+    content: `## Hva er Notion AI?
+
+Notion AI er en AI-assistent integrert direkte i Notion — det populære notat- og prosjektstyringsverktøyet. Du kan bruke det til å generere innhold, oppsummere sider, forbedre tekst, oversette, og svare på spørsmål om innholdet i Notion-workspace-et ditt.
+
+**Pris:** Notion AI koster 10 USD/bruker/mnd som tillegg til Notion-planen din (Notion Free + AI er 10 USD/mnd totalt for én bruker).
+
+## Steg 1: Aktiver Notion AI
+
+1. Logg inn på **notion.so**
+2. Gå til **Settings & members** (tannhjul-ikon)
+3. Klikk på **Plans** og aktiver Notion AI-tillegget
+4. Alternativt: Åpne en Notion-side og skriv \`/ai\` — du blir spurt om å aktivere AI
+
+## Steg 2: Din første AI-generering
+
+I en Notion-side:
+
+1. Trykk på **Enter** for ny linje
+2. Skriv **/** og velg **AI** fra menyen
+3. Velg **Draft with AI**
+4. Beskriv hva du vil ha:
+
+\`\`\`
+Skriv en agenda for et ukentlig statusmøte for et
+5-personers produktteam. Inkluder seksjonene:
+Forrige uke, Ukens prioriteringer, Blokkere og Neste steg.
+\`\`\`
+
+Notion AI genererer innhold direkte på siden.
+
+## Steg 3: Forbedre eksisterende tekst
+
+Marker tekst på en Notion-side:
+
+1. Marker avsnittet eller sidedelen
+2. Klikk på **AI**-ikonet i hover-menyen, eller trykk **Cmd+J** (Mac) / **Ctrl+J** (Windows)
+3. Velg en handling:
+   - **Improve writing** — generell forbedring
+   - **Fix spelling & grammar** — korrektur
+   - **Make shorter** / **Make longer** — juster lengde
+   - **Simplify language** — enklere formulering
+   - **Change tone** → Formal, Casual, Friendly, Confident
+
+## Steg 4: Oppsummer Notion-sider
+
+For lange Notion-sider:
+
+1. Klikk på **...** (tre prikker) øverst til høyre på en side
+2. Velg **Summarize page**
+3. En oppsummering genereres og legges til øverst på siden
+
+Alternativt, åpne AI Ask-funksjonen:
+1. Trykk **Cmd+J** (Mac) / **Ctrl+J** (Windows) uten å ha tekst markert
+2. Skriv:
+
+\`\`\`
+Oppsummer denne siden i 3 setninger
+\`\`\`
+
+## Steg 5: Bruk Q&A på tvers av workspace
+
+Notion AI kan søke i hele workspace-et ditt:
+
+1. Klikk på Notion AI-ikonet øverst til venstre (stjerne-ikon)
+2. Still et spørsmål om innholdet i workspace-et:
+
+\`\`\`
+Hvilke prosjekter har vi startet i Q1 og hva er statusen?
+\`\`\`
+
+\`\`\`
+Finn alle møtenotater fra mars og oppsummer
+beslutningene som ble tatt.
+\`\`\`
+
+\`\`\`
+Hva har vi dokumentert om onboarding-prosessen vår?
+\`\`\`
+
+Notion AI søker gjennom sidene du har tilgang til og gir svar med lenker til kildene.
+
+## Steg 6: Bruk AI i Notion-databaser
+
+Notion AI kan fylle inn database-egenskaper automatisk:
+
+1. Åpne en database (tabell, board, etc.)
+2. Legg til en ny egenskap (kolonne) og velg type **AI**
+3. Konfigurér egenskapen:
+   - Gi den et navn (f.eks. "Sammendrag" eller "Stikkord")
+   - Skriv en instruksjon: "Oppsummer dette prosjektet i én setning"
+4. Klikk **Generate all** — AI fyller inn for alle eksisterende rader
+
+Dette er nyttig for å automatisk:
+- Generere sammendrag av prosjekter
+- Kategorisere oppgaver
+- Lage stikkord for artikler
+
+## Steg 7: Autofyll i maler
+
+Lag en Notion-mal med AI-autofyll:
+
+1. Opprett en ny side
+2. Legg til AI-blokker som stiller spørsmål ved oppstart:
+
+\`\`\`
+/ai → Ask AI → Hva er de viktigste risikoene i dette prosjektet?
+\`\`\`
+
+Neste gang du oppretter en side fra malen, genererer AI svar basert på konteksten.
+
+## Tips for effektiv bruk
+
+- **Vær spesifikk**: "Skriv 5 handlingspunkter" gir bedre resultat enn "hva er neste steg"
+- **Kombiner med database-filter**: Bruk AI til å oppsummere filtrert database-visning
+- **Bygg en Wiki med AI**: Last opp dokumenter, la AI generere strukturen og oppsummeringene
+- **Bruk AI til å oversette**: Particularly useful for internasjonale teams
+
+Notion AI er ikke det sterkeste AI-verktøyet isolert sett, men det er det best integrerte — du trenger ikke å bytte verktøy for å få AI-hjelp der du allerede jobber.`,
+    readingTime: 5,
+  },
+]
+
 async function upsertArticle(data: {
   slug: string
   title: string
   excerpt: string
   content: string
   readingTime: number
-  category: "NEWS" | "GUIDE" | "COMPARISON"
+  category: "NEWS" | "GUIDE" | "COMPARISON" | "TUTORIAL"
 }) {
   return db.article.upsert({
     where: { slug: data.slug },
@@ -5600,7 +7964,14 @@ Jo mer presis du er, jo bedre svar får du.
     console.log("  COMPARISON:", result.title)
   }
 
-  console.log(`\nDone. Seeded ${newsArticles.length} news, ${guideArticles.length} guides, ${comparisonArticles.length} comparisons.`)
+  // Seed tutorial articles
+  console.log("Seeding tutorial articles...")
+  for (const article of tutorialArticles) {
+    const result = await upsertArticle({ ...article, category: "TUTORIAL" })
+    console.log("  TUTORIAL:", result.title)
+  }
+
+  console.log(`\nDone. Seeded ${newsArticles.length} news, ${guideArticles.length} guides, ${comparisonArticles.length} comparisons, ${tutorialArticles.length} tutorials.`)
 }
 
 main()
